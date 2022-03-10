@@ -92,6 +92,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    list-style: none;
 }
 
 .pros{
@@ -130,7 +131,7 @@
     margin: 0 5px;
 }
 
-.utentes{
+.utentes a{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -143,9 +144,10 @@
     color: var(--darkGray);
     background: var(--clear);
     border-radius: 15px 15px 0px 0px;
+    text-decoration: none;
 }
 
-.utentes > span{
+.utentes a > span{
     color: var(--darkGray);
     background-color: var(--clear);
     font-size: 18px;
