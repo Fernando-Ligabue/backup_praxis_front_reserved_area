@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+    --goldenBrown:#847040;
+    --midBrow:#E2C695;
+    --clear:#F3EFE8;
+    --darkGray:#42403C;
+    --mediumGray:#8E8B84;
+    --lightGray:#C7C3BA;
+    --black:#000000;
+    --white:#FFFFFF;
+}
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--clear);
+}
+
+.main-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 182px;
+}
+.main-logo img{
+    width: 153.27px;
+    height: 212.65px;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100.35px;
+}
+
+.login input {
+    top: 10rem;
+    width: 250px;
+    height: 45px;
+    margin-top: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: var(--mediumGray);
+    border: 1px solid var(--mediumGray);
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.login-btn{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 15px 40px;
+margin-top: 20px;
+color: var(--clear);
+font-family: 'Cabin', sans-serif;
+font-weight: 700;
+width: 150px;
+height: 51px;
+left: calc(50% - 150px/2);
+background: var(--darkGray);
+border-radius: 5px;
+border: none;
+}
+
+.forgot-pass{
+    margin-top: 15px;
+    color: var(--goldenBrown);
+    font-family: 'Cabin', sans-serif;
+    font-weight: 700;
+    text-decoration: underline;
+}
+.forgot-pass:visited{
+    margin-top: 21px;
+    color: var(--goldenBrown);
+    font-family: 'Cabin', sans-serif;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.consultas-btn{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 15px 36px;
+color: var(--clear);
+font-family: 'Cabin', sans-serif;
+font-weight: 700;
+width: 245px;
+height: 51px;
+left: calc(50% - 245px/2 + 0.5px);
+margin-top: 91px;
+margin-bottom: 182px;
+background: var(--darkGray);
+border-radius: 5px;
+}
+

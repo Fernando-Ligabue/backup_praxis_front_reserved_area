@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="prof_prescription_utentes.css">
+    <link
+        href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+        rel="stylesheet">
+    <title>Clínica Práxis - Área Reservada</title>
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="logo-sup">
+            <img src="../assets/images/logo_nav_sup.svg" alt="logo_nav">
+        </div>
+
+        <div class="tab-bar">
+            <div class="back_to">
+                <a class="return"href="prof_lista_utentes.html" rel="noopener noreferrer">
+                    <p class="back"><span class="material-icons">arrow_back_ios</span>LISTA DE UTENTES</p>
+                </a>
+            </div>
+
+
+            <ul class="users">
+                <li class="utentes"><span class="material-icons material-icons-outlined ">account_circle_outlined</span>
+                    <p class="first">UTENTES</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="search">
+            <input type="search" name="search" id="search" placeholder="PESQUISAR POR RELATÓRIOS E EXAMES...">
+            <a class="filters">
+                <p>FILTROS</p><span class="material-icons ">sort_filled</span><span
+                    class="material-icons ">arrow_drop_down</span>
+            </a>
+        </div>
+
+            <div class="card">
+                <div class="profile_photo">
+                    <span class="material-icons material-icons-outlined md-48">account_circle</span>
+                </div>
+
+                <div class="user_description">
+                    <div class="username">Nome do utente</div>
+                    <div class="userId">321321321</div>
+                    <div class="birth_date">20 DE MARÇO DE 1968 </div>
+                </div>
+
+                <div class="toggle_btn">
+                    <span class="material-icons material-icons-outlined">expand_circle_down</span>
+                </div>
+
+                <div class="options">
+                    <button class="see_docs"><span class="material-icons material-icons-outlined">description</span> VER
+                        DOCUMENTOS <span class="material-icons ">arrow_drop_down</span></button>
+                    <button class="upload_docs"><span
+                            class="material-icons material-icons-outlined">file_upload</span>UPLOAD DOCUMENTOS</button>
+                </div>
+            </div>
+
+        <div class="prescription">
+            <h4 class="title"> Documentos > <span class="material-icons-outlined">medication</span> Receitas</h4>
+            <button class="upload"><span class="material-icons-outlined">file_upload</span> UPLOAD RECEITA</button>
+        </div>
+
+        <section class="results">
+            <div class="card_result">
+                <div class="prescription_description">
+                    <div class="prescriptiondate">10 MAR 2022</div>
+                    <div class="prescriptiondesc">Lorem Ipsum 500mg/g, dolor sit amet - 20 Unidades </div>
+                    <div class="drname">Dr. Nome do Médico </div>
+                </div>
+
+                <div class="toggle_btn_prescription">
+                    <span class="material-icons material-icons-outlined">cancel</span>
+                </div>
+
+                <div class="options">
+                    <button class="file_down"><span class="material-icons material-icons-outlined">file_download</span>
+                        DESCARREGAR </button>
+                    <button class="delete"><span
+                            class="material-icons material-icons-outlined">remove_circle_outlined</span>REMOVER</button>
+                </div>
+            </div>
+            <div class="card_result">
+                <div class="prescription_description">
+                    <div class="prescriptiondate">10 MAR 2022</div>
+                    <div class="prescriptiondesc">Lorem Ipsum 500mg/g, dolor sit amet - 20 Unidades </div>
+                    <div class="drname">Dr. Nome do Médico </div>
+                </div>
+
+                <div class="toggle_btn_prescription">
+                    <span class="material-icons material-icons-outlined">expand_circle_down</span>
+                </div>
+
+                <!-- <div class="options">
+                    <button class="file_down"><span class="material-icons material-icons-outlined">file_download</span>
+                        DESCARREGAR </button>
+                    <button class="delete"><span
+                            class="material-icons material-icons-outlined">remove_circle_outlined</span>REMOVER</button>
+                </div> -->
+            </div>
+        </section>
+
+
+    </div>
+    </div>
+
+</body>
+
+</html>

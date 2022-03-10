@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="admin_edita_utente.css">
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+            rel="stylesheet">
+        <title>Clínica Práxis - Área Reservada</title>
+    </head>
+    
+    <body>
+        <div class="main">
+    
+            <div class="logo-sup">
+                <img src="../assets/images/logo_nav_sup.svg" alt="logo_nav">
+            </div>
+    
+            <div class="tab-bar">
+
+                <div class="back_to">
+                    <a class="return"href="admin_panel_utentes.html" rel="noopener noreferrer">
+                        <p class="back"><span class="material-icons">arrow_back_ios</span>LISTA DE UTENTES</p>
+                    </a>
+                </div>
+                <ul class="users">
+                    <li class="utentes"><span class="material-icons material-icons-outlined ">account_circle_outlined</span>
+                        <p class="first">UTENTES</p>
+                    </li>
+                    <li class="pros"><span class="material-icons material-icons-outlined ">badge_outlined</span>
+                        <p class="second">MÉDICOS</p>
+                    </li>
+                </ul>
+
+            </div>
+    
+            <div class="divider">
+            </div>
+
+            <div class="info_utente">
+                <div class="card">
+                    <div class="profile_photo">
+                        <span class="material-icons material-icons-outlined md-48">account_circle</span>
+                    </div>
+
+                    <div class="user_description">
+                        <div class="username">Nome do utente</div>
+                        <div class="userId">321321321</div>
+                        <div class="birth_date">20 DE MARÇO DE 1968 </div>
+                    </div>
+
+                    <div class="toggle_btn">
+                        <span class="material-icons material-icons-outlined">cancel</span>
+                    </div>
+
+                    <div class="options">
+                        <button class="see_docs"><span class="material-icons material-icons-outlined">description</span> VER
+                            DOCUMENTOS <span class="material-icons ">arrow_drop_down</span></button>
+                        <button class="upload_docs"><span
+                                class="material-icons material-icons-outlined">file_upload</span>UPLOAD DOCUMENTOS</button>
+                        <button class="edit"><span class="material-icons">edit</span>EDITAR DADOS</button>
+                        <button class="delete"><span
+                                class="material-icons material-icons-outlined">remove_circle_outlined</span>REMOVER</button>
+                    </div>
+                </div>
+            </div>
+
+        <!-- Container edição utente -->
+        <div id="container_edit" class="edit_container">
+            <div class="modal">
+                <div class="modal_columns">
+
+                    <div class="form_edit_left">
+                        <form action="" class="edit-left">
+                            <div class="header_left">
+                                <h4>Editar Dados</h4>
+                            </div>
+
+                            <div class="name">
+                                <p>Nome</p>
+                                <input type="text" placeholder="Indique seu nome">
+                            </div>
+
+                            <div class="gender">
+                                <p>Gênero</p>
+                                <select name="gender_value" id="gender">
+                                    <option value="indique o gênero" selected> Indique o gênero</option>
+                                    <option value="masculino">Masculino</option>
+                                    <option value="feminino">Feminino</option>
+                                    <option value="not">Não informado</option>
+                                </select>
+                            </div>
+
+                            <div class="birthday">
+                                <p>Data de Nascimento</p>
+                                <div class="selection">
+                                    <select name="day_value" id="birthday">
+                                        <option value="dai" selected> Dia</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                    </select>
+
+                                    <select name="mounth_value" id="mounth">
+                                        <option value="mes" selected> Mês</option>
+                                        <option value="Janeiro">Janeiro</option>
+                                        <option value="Fevereiro">Fevereiro</option>
+                                        <option value="Março">Março</option>
+                                        <option value="Abril">Abril</option>
+                                        <option value="Maio">Maio</option>
+                                        <option value="Junho">Junho</option>
+                                        <option value="Julho">Julho</option>
+                                        <option value="Agosto">Agosto</option>
+                                        <option value="Setembro">Setembro</option>
+                                        <option value="Outubro">Outubro</option>
+                                        <option value="Novembro">Novembro</option>
+                                        <option value="Dezembro">Dezembro</option>
+                                    </select>
+
+                                    <select name="year_value" id="year">
+                                        <option value="Ano" selected> Ano </option>
+                                        <option value="1990">1990</option>
+                                        <option value="1991">1991</option>
+                                        <option value="1992">1992</option>
+                                        <option value="1993">1993</option>
+                                        <option value="1994">1994</option>
+                                        <option value="1995">1995</option>
+                                        <option value="1996">1996</option>
+                                        <option value="1997">1997</option>
+                                        <option value="1998">1998</option>
+                                        <option value="1999">1999</option>
+                                        <option value="2000">2000</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="identify">
+                                <div class="docs_id">
+                                    <p>Nº CC/BI </p>
+                                    <input type="text" placeholder="Indique o CC ou BI">
+                                </div>
+                                <div class="docs_id">
+                                    <p>NIF </p>
+                                    <input type="text" placeholder="Indique o NIF">
+                                </div>
+                            </div>
+
+                            <div class="email">
+                                <p>E-mail</p>
+                                <input type="text" placeholder="Indique o e-mail">
+                            </div>
+
+                            <div class="phone">
+                                <p>Telemóvel</p>
+                                <input type="text" placeholder="Indique o número de telemovel">
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="form_edit_right">
+                        <form action="" class="edit-right">
+                            <div class="header_rigth">
+                                <span class="material-icons-outlined">cancel</span>
+                            </div>
+                            <div class="country">
+                                <p>País</p>
+                                <select name="country_value" id="country">
+                                    <option value="indique o pais" selected> Indique o país</option>
+                                    <option value="Portugal">Portugal</option>
+                                    <option value="França">França</option>
+                                    <option value="Alemanha">Alemanha</option>
+                                </select>
+                            </div>
+
+                            <div class="district">
+                                <p>Distrito</p>
+                                <select name="district_value" id="district">
+                                    <option value="indique o distrito" selected> Indique o Distrito</option>
+                                    <option value="Lisboa">Lisboa</option>
+                                    <option value="Porto">Porto</option>
+                                    <option value="Faro">Faro</option>
+                                </select>
+                            </div>
+
+                            <div class="address">
+                                <p>Morada</p>
+                                <input type="text" placeholder="Indique a morada">
+                            </div>
+
+                            <div class="zip_code">
+                                <p>Código Postal</p>
+                                <div class="zip_code_fields">
+                                    <input class="field_1" type="text" placeholder="xxxx">
+                                    <input class="field_2" type="text" placeholder="xxx">
+                                    <input class="location" type="text" placeholder="Localidade">
+                                </div>
+                            </div>
+
+                            <div class="professional">
+                                <p>Profissional</p>
+                                <select name="pro_value" id="professional">
+                                    <option value="Selecione o Profissional" selected>Selecione o Profissional</option>
+                                    <option value="Doutor 1">Doutor 1</option>
+                                    <option value="Doutor 2">Doutor 2</option>
+                                    <option value="Doutor 3">Doutor 3</option>
+                                </select>
+                            </div>
+
+                            <div class="btn_form">
+                                <button class="submit">SUBMETER</button>
+                                <button class="cancel">CANCELAR</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        
+</body>
+</html>
