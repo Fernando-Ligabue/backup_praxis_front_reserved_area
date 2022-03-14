@@ -26,14 +26,15 @@
 }
 
 .logo-sup{
+    display: flex;
+    justify-content: end;
     width: 100%;
     height: 90px;
 }
-.logo-sup img {
+.logo-sup > img {
     width: 82.64px;
     height: 53.04px;
-    margin-top: 1rem;
-    margin-left: 75rem;
+    margin-top: 2rem;
     margin-right: 58.36px;
 }
 
@@ -175,8 +176,19 @@
 }
 
 .results{
-    max-width: 100%;
+    width: 100%;
+    height: 709px;
+    overflow-y: scroll;
 }
+.results::-webkit-scrollbar {
+    width: 25px;
+    background-color: var(--lightGray);
+}
+
+.results::-webkit-scrollbar-thumb {
+    background-color: var(--darkGray);
+}
+
 .card{
     display: flex;
     flex-direction: row;
@@ -185,6 +197,7 @@
     width: 100%;
     margin: 10px auto;
     height: 90px;
+    margin: 10px 10px 10px 100px;
     background: linear-gradient(270deg, var(--clear) 0%, var(--midBrow) 100%);
     border-radius: 10px;
 }
@@ -419,6 +432,16 @@
     background-color: var(--darkGray);
     border-radius: 5px;
 }
+
+.create > span{
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    font-size: 16.67px;
+    color: var(--clear);
+    margin-top: 2px;
+}
+
 .new{
     background-color: var(--darkGray);
     width: 93px;
