@@ -333,7 +333,7 @@
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin: 0 15px;
+    margin: 0 15px 0 0;
     color: var(--clear);
     font-family: 'Cabin', sans-serif;
     font-weight: 700;
@@ -505,7 +505,7 @@
     top: 0;
     left: 0;
     z-index: 5;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 }
@@ -966,6 +966,11 @@
     margin-left: 50px;
 }
 
+.close{
+    background-color: none;
+    border: none;
+}
+
 .header_rigth{
     display: flex;
     justify-content: flex-end;
@@ -1400,7 +1405,7 @@
 
 /* style modal inserção de novos documentos */
 
-.modal_container{
+.modal_container_documents{
     width: 100vw;
     height: 100vh;
     background: rgba(0, 0, 0, .5);
@@ -1408,7 +1413,7 @@
     top: 0;
     left: 0;
     z-index: 5;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 }

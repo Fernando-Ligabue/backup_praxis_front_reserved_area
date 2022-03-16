@@ -354,14 +354,14 @@
         </section>
 
         <div class="footer">
-            <button class="create">
-                <span class="material-icons material-icons-outlined ">add_circle</span>
+            <button class="create" id="show" onclick="showModal()">
+                <span class="material-icons-outlined ">add_circle</span>
                 <p class="new">CRIAR NOVO</p>
             </button>
         </div>
 
         <!-- Modal cadastro novo profissional -->
-        <!-- <div id="modal_cadastro" class="modal_container">
+        <div id="modal_cadastro" class="modal_container">
             <div class="modal">
                 <div class="modal_columns">
 
@@ -483,7 +483,7 @@
                     <div class="form_cadastro_right">
                         <form action="" class="cadastro-right">
                             <div class="header_rigth">
-                                <span class="material-icons-outlined">cancel</span>
+                                <button class="close" id="close" onclick="closeModal()"><span class="material-icons-outlined">cancel</span></button>
                             </div>
                             <div class="country">
                                 <p>País</p>
@@ -527,9 +527,10 @@
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
     </div>
 
+    <script src="../js/global.js"></script>
 </body>
 
 </html>

@@ -108,8 +108,9 @@
 .utentes a > span{
     color: var(--darkGray);
     background-color: var(--clear);
+    width: 17.5px;
+    height: 17.5px;
     font-size: 17.5px;
-    font-size: 18px;
     margin: 0px 5px;
 }
 
@@ -371,6 +372,8 @@
 .see_utentes > span{
     background-color: transparent;
     color: var(--darkGray);
+    width: 18px;
+    height: 18px;
     font-size: 18px;
     margin-right: 5px;
 }
@@ -459,12 +462,7 @@
 /*style global icons material design*/
 .material-icons, 
 .material-icons-outlined{
-    width: 18px;
-    height: 18px;
-    font-size: 18px;
-    bottom: 30.39%;
-    color: var(--clear);
-    background-color: var(--darkGray);
+    background-color: transparent;
 }
 
 /* style modal registo novo utente */
@@ -477,7 +475,7 @@
     top: 0;
     left: 0;
     z-index: 5;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 }
@@ -937,6 +935,12 @@
     top: 50px;
     margin-left: 50px;
 }
+
+.close{
+    background-color: none;
+    border: none;
+}
+
 
 .header_rigth{
     display: flex;

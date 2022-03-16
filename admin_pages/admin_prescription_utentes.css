@@ -367,7 +367,7 @@
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 0 15px;
+  margin: 0 15px 0 0;
   color: var(--clear);
   font-family: "Cabin", sans-serif;
   font-weight: 700;
