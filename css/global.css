@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+
+/* Colors web app */
+:root {
+--black: #000000;
+--clear: #f3efe8;
+--darkGray: #42403c;
+--goldenBrown: #847040;
+--lightGray: #c7c3ba;
+--midBrow: #e2c695;
+--mediumGray: #8e8b84;
+--white: #ffffff;
+}
+
+
+/* Fonts web app */
+.h1{
+    font-family: 'Cabin', sans-serif;
+    font-size: 96px;
+    font-weight: 400;
+    line-height: 125px;
+    letter-spacing: -1.5px;
+}
+.h2{
+    font-family: 'Cabin', sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 80px;
+    letter-spacing: -0.5px;
+}
+.h3{
+    font-family: 'Cabin', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 60px;
+}
+.h4{
+    font-family: 'Roboto', sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 51px;
+    letter-spacing: 0.25px;
+
+}
+.h5{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+}
+.h6{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.1px;
+}
+
+.sub1{
+    font-family: 'Cabin', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+}
+.sub2{
+    font-family: 'Cabin', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0.25px;
+}
+
+.body1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+}
+.body2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.25px;
+}
+
+.button{
+    font-family: 'Cabin', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 1.25px;
+}
+
+.caption{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0.4px;
+}
+
+.overline{
+    font-family: 'Cabin', sans-serif;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 15px;
+    letter-spacing: 1.5px; 
+}
+
+/* Pages styles similares */
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*style global icons material design*/
+.material-icons, 
+.material-icons-outlined{
+    background-color: transparent;
+}

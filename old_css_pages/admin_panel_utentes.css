@@ -1,23 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
-:root {
-  --goldenBrown: #847040;
-  --midBrow: #e2c695;
-  --clear: #f3efe8;
-  --darkGray: #42403c;
-  --mediumGray: #8e8b84;
-  --lightGray: #c7c3ba;
-  --black: #000000;
-  --white: #ffffff;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: var(--clear);
-}
-
 .main{
     display: flex;
     flex-direction: column;
@@ -1384,6 +1364,7 @@
     border-radius: 5px;
     color: var(--clear);
     border: 1px solid var(--clear);
+    cursor: pointer;
 }
 
 .cancel{

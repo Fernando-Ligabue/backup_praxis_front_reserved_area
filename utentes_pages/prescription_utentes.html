@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="prescription_utentes.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/breakpoints.css">
     <link
         href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
         rel="stylesheet">
@@ -21,229 +23,144 @@
 
         <div class="tab-bar">
             <ul class="tabs">
-                <li class="reports"><a href="reports_utentes.html"><span class="material-icons material-icons-outlined">description</span>
-                    <p class="first">RELATÓRIOS E EXAMES</p></a>
+                <li class="reports_tab button"><a href="reports_utentes.html"><span class="material-icons material-icons-outlined">description</span>
+                    <p class="second button">RELATÓRIOS E EXAMES</p></a>
                 </li>
-                <li class="multimedia_tab"><a href="multimedia_utentes.html"><span class="material-icons material-icons-outlined">ondemand_video</span>
-                    <p class="first">MULTIMÉDIA</p></a>
+                <li class="tab_second button"><a href="multimedia_utentes.html"><span class="material-icons material-icons-outlined">ondemand_video</span>
+                    <p class="second button">MULTIMÉDIA</p></a>
                 </li>
-                <li class="prescrition"><a href="prescription_utentes.html"><span class="material-icons material-icons-outlined">medication</span>
-                    <p class="second">RECEITAS</p></a>
+                <li class="tab_first button"><a href="prescription_utentes.html"><span class="material-icons material-icons-outlined">medication</span>
+                    <p class="first button">RECEITAS</p></a>
                 </li>
-                <li class="help"><a href="help_utentes.html"><span class="material-icons material-icons-outlined ">help_outlined</span>
-                    <p class="first">AJUDA</p></a>
+                <li class="tab_second button"><a href="help_utentes.html"><span class="material-icons material-icons-outlined ">help_outlined</span>
+                    <p class="second button">AJUDA</p></a>
                 </li>
             </ul>
         </div>
 
         <div class="search">
-            <input type="search" name="search" id="search" placeholder="PESQUISAR POR RELATÓRIO OU EXAME...">
-            <a class="filters">
-                <p>FILTROS</p><span class="material-icons ">sort_filled</span><span
-                    class="material-icons ">arrow_drop_down</span>
-            </a>
+            <input class="overline" type="search" name="search" id="search" placeholder="PESQUISAR POR RELATÓRIO OU EXAME...">
         </div>
 
-        <div class="report">
-            <h4 class="title">Receitas</h4>
-            <button class="upload"><span class="material-icons-outlined">file_upload</span> UPLOAD RELATÓRIO OU EXAMES</button>
+        <div class="prescription">
+            <h4 class="h4">Receitas</h4>
+            <button class="upload overline"><span class="material-icons-outlined">file_upload</span> UPLOAD REECEITA</button>
         </div>
 
         <section class="results">
-            <div class="card_result">
+            <div class="card">
                 <div class="icon_type">
-                    <span class="material-icons material-icons-outlined md-48">assignment</span>
+                    <span class="material-icons-outlined">assignment</span>
                 </div>
 
-                <div class="report_description">
-                    <div class="reportdate">10 MAR 2022</div>
-                    <div class="reportdesc">Lorem Ipsum 500mg/g, dolor sit amet - 20 Unidades.</div>
-                    <div class="drname">Dr. Nome do Médico </div>
+                <div class="prescription_description">
+                    <div class="prescriptiondate overline">10 MAR 2022</div>
+                    <div class="prescriptiondesc sub1">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+                    <div class="drname body2">Dr. Nome do Médico </div>
                 </div>
 
                 <div class="options">
-                    <button class="file_down"><span class="material-icons material-icons-outlined">file_download</span>
+                    <button class="see_docs overline"><span class="material-icons material-icons-outlined">file_download</span>
                         DESCARREGAR </button>
                 </div>
             </div>
-            <div class="card_result">
+            <div class="card">
                 <div class="icon_type">
-                    <span class="material-icons material-icons-outlined md-48">assignment</span>
+                    <span class="material-icons-outlined">assignment</span>
                 </div>
 
-                <div class="report_description">
-                    <div class="reportdate">10 MAR 2022</div>
-                    <div class="reportdesc">Lorem Ipsum 500mg/g, dolor sit amet - 20 Unidades.</div>
-                    <div class="drname">Dr. Nome do Médico </div>
+                <div class="prescription_description">
+                    <div class="prescriptiondate overline">10 MAR 2022</div>
+                    <div class="prescriptiondesc sub1">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+                    <div class="drname body2">Dr. Nome do Médico </div>
                 </div>
 
                 <div class="options">
-                    <button class="file_down"><span class="material-icons material-icons-outlined">file_download</span>
+                    <button class="see_docs overline"><span class="material-icons material-icons-outlined">file_download</span>
                         DESCARREGAR </button>
                 </div>
             </div>
-            <div class="card_result">
+            <div class="card">
                 <div class="icon_type">
-                    <span class="material-icons material-icons-outlined md-48">assignment</span>
+                    <span class="material-icons-outlined">assignment</span>
                 </div>
 
-                <div class="report_description">
-                    <div class="reportdate">10 MAR 2022</div>
-                    <div class="reportdesc">Lorem Ipsum 500mg/g, dolor sit amet - 20 Unidades.</div>
-                    <div class="drname">Dr. Nome do Médico </div>
+                <div class="prescription_description">
+                    <div class="prescriptiondate overline">10 MAR 2022</div>
+                    <div class="prescriptiondesc sub1">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+                    <div class="drname body2">Dr. Nome do Médico </div>
                 </div>
 
                 <div class="options">
-                    <button class="file_down"><span class="material-icons material-icons-outlined">file_download</span>
+                    <button class="see_docs overline"><span class="material-icons material-icons-outlined">file_download</span>
                         DESCARREGAR </button>
                 </div>
             </div>
-            <div class="card_result">
+            <div class="card">
                 <div class="icon_type">
-                    <span class="material-icons material-icons-outlined md-48">assignment</span>
+                    <span class="material-icons-outlined">assignment</span>
                 </div>
 
-                <div class="report_description">
-                    <div class="reportdate">10 MAR 2022</div>
-                    <div class="reportdesc">Lorem Ipsum 500mg/g, dolor sit amet - 20 Unidades.</div>
-                    <div class="drname">Dr. Nome do Médico </div>
+                <div class="prescription_description">
+                    <div class="prescriptiondate overline">10 MAR 2022</div>
+                    <div class="prescriptiondesc sub1">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+                    <div class="drname body2">Dr. Nome do Médico </div>
                 </div>
 
                 <div class="options">
-                    <button class="file_down"><span class="material-icons material-icons-outlined">file_download</span>
+                    <button class="see_docs overline"><span class="material-icons material-icons-outlined">file_download</span>
                         DESCARREGAR </button>
                 </div>
             </div>
-            <div class="card_result">
+            <div class="card">
                 <div class="icon_type">
-                    <span class="material-icons material-icons-outlined md-48">assignment</span>
+                    <span class="material-icons-outlined">assignment</span>
                 </div>
 
-                <div class="report_description">
-                    <div class="reportdate">10 MAR 2022</div>
-                    <div class="reportdesc">Lorem Ipsum 500mg/g, dolor sit amet - 20 Unidades.</div>
-                    <div class="drname">Dr. Nome do Médico </div>
+                <div class="prescription_description">
+                    <div class="prescriptiondate overline">10 MAR 2022</div>
+                    <div class="prescriptiondesc sub1">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+                    <div class="drname body2">Dr. Nome do Médico </div>
                 </div>
 
                 <div class="options">
-                    <button class="file_down"><span class="material-icons material-icons-outlined">file_download</span>
+                    <button class="see_docs overline"><span class="material-icons material-icons-outlined">file_download</span>
                         DESCARREGAR </button>
                 </div>
             </div>
-            <div class="card_result">
+            <div class="card">
                 <div class="icon_type">
-                    <span class="material-icons material-icons-outlined md-48">assignment</span>
+                    <span class="material-icons-outlined">assignment</span>
                 </div>
 
-                <div class="report_description">
-                    <div class="reportdate">10 MAR 2022</div>
-                    <div class="reportdesc">Lorem Ipsum 500mg/g, dolor sit amet - 20 Unidades.</div>
-                    <div class="drname">Dr. Nome do Médico </div>
+                <div class="prescription_description">
+                    <div class="prescriptiondate overline">10 MAR 2022</div>
+                    <div class="prescriptiondesc sub1">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+                    <div class="drname body2">Dr. Nome do Médico </div>
                 </div>
 
                 <div class="options">
-                    <button class="file_down"><span class="material-icons material-icons-outlined">file_download</span>
+                    <button class="see_docs overline"><span class="material-icons material-icons-outlined">file_download</span>
                         DESCARREGAR </button>
                 </div>
             </div>
-            <div class="card_result">
+            <div class="card">
                 <div class="icon_type">
-                    <span class="material-icons material-icons-outlined md-48">assignment</span>
+                    <span class="material-icons-outlined">assignment</span>
                 </div>
 
-                <div class="report_description">
-                    <div class="reportdate">10 MAR 2022</div>
-                    <div class="reportdesc">Lorem Ipsum 500mg/g, dolor sit amet - 20 Unidades.</div>
-                    <div class="drname">Dr. Nome do Médico </div>
+                <div class="prescription_description">
+                    <div class="prescriptiondate overline">10 MAR 2022</div>
+                    <div class="prescriptiondesc sub1">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+                    <div class="drname body2">Dr. Nome do Médico </div>
                 </div>
 
                 <div class="options">
-                    <button class="file_down"><span class="material-icons material-icons-outlined">file_download</span>
-                        DESCARREGAR </button>
-                </div>
-            </div>
-            <div class="card_result">
-                <div class="icon_type">
-                    <span class="material-icons material-icons-outlined md-48">assignment</span>
-                </div>
-
-                <div class="report_description">
-                    <div class="reportdate">10 MAR 2022</div>
-                    <div class="reportdesc">Lorem Ipsum 500mg/g, dolor sit amet - 20 Unidades.</div>
-                    <div class="drname">Dr. Nome do Médico </div>
-                </div>
-
-                <div class="options">
-                    <button class="file_down"><span class="material-icons material-icons-outlined">file_download</span>
-                        DESCARREGAR </button>
-                </div>
-            </div>
-            <div class="card_result">
-                <div class="icon_type">
-                    <span class="material-icons material-icons-outlined md-48">assignment</span>
-                </div>
-
-                <div class="report_description">
-                    <div class="reportdate">10 MAR 2022</div>
-                    <div class="reportdesc">Lorem Ipsum 500mg/g, dolor sit amet - 20 Unidades.</div>
-                    <div class="drname">Dr. Nome do Médico </div>
-                </div>
-
-                <div class="options">
-                    <button class="file_down"><span class="material-icons material-icons-outlined">file_download</span>
-                        DESCARREGAR </button>
-                </div>
-            </div>
-            <div class="card_result">
-                <div class="icon_type">
-                    <span class="material-icons material-icons-outlined md-48">assignment</span>
-                </div>
-
-                <div class="report_description">
-                    <div class="reportdate">10 MAR 2022</div>
-                    <div class="reportdesc">Lorem Ipsum 500mg/g, dolor sit amet - 20 Unidades.</div>
-                    <div class="drname">Dr. Nome do Médico </div>
-                </div>
-
-                <div class="options">
-                    <button class="file_down"><span class="material-icons material-icons-outlined">file_download</span>
-                        DESCARREGAR </button>
-                </div>
-            </div>
-            <div class="card_result">
-                <div class="icon_type">
-                    <span class="material-icons material-icons-outlined md-48">assignment</span>
-                </div>
-
-                <div class="report_description">
-                    <div class="reportdate">10 MAR 2022</div>
-                    <div class="reportdesc">Lorem Ipsum 500mg/g, dolor sit amet - 20 Unidades.</div>
-                    <div class="drname">Dr. Nome do Médico </div>
-                </div>
-
-                <div class="options">
-                    <button class="file_down"><span class="material-icons material-icons-outlined">file_download</span>
-                        DESCARREGAR </button>
-                </div>
-            </div>
-            <div class="card_result">
-                <div class="icon_type">
-                    <span class="material-icons material-icons-outlined md-48">assignment</span>
-                </div>
-
-                <div class="report_description">
-                    <div class="reportdate">10 MAR 2022</div>
-                    <div class="reportdesc">Lorem Ipsum 500mg/g, dolor sit amet - 20 Unidades.</div>
-                    <div class="drname">Dr. Nome do Médico </div>
-                </div>
-
-                <div class="options">
-                    <button class="file_down"><span class="material-icons material-icons-outlined">file_download</span>
+                    <button class="see_docs overline"><span class="material-icons material-icons-outlined">file_download</span>
                         DESCARREGAR </button>
                 </div>
             </div>
         </section>
-
 
     </div>
     </div>

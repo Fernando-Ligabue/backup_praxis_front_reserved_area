@@ -588,6 +588,7 @@
     justify-content: space-between;
     align-items: center;
     width: 330px;
+    color: var(--darkGray);
 }
 
 .play{

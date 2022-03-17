@@ -1,0 +1,95 @@
+@media only screen and (min-width: 1201px) {
+    .results{
+        width: 100%;
+        height: 600px;
+        overflow-y: scroll;
+    }
+    
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .card{
+        margin: 10px 0;
+        max-width: 100%;
+    }
+    
+    .profile_photo{
+        margin: 10px ;
+    }
+
+    .user_description{
+        width: 100%;
+        max-width: 150px;
+    }
+    
+    .username{
+        width: 100%;
+        max-width: 150px;
+        font-size: 15px;
+        letter-spacing: 0.5px;
+    }
+    
+    .userId{
+        width: 100%;
+        max-width: 150px;
+    }
+    
+    .birth_date{
+        width: 100%;
+        max-width: 150px;
+    }
+    
+    .see_docs{
+        letter-spacing: 0.75px;
+    }
+    
+    .upload_docs{
+        letter-spacing: 0.75px;
+    }
+    
+    .edit{
+        letter-spacing: 0.75px;
+    }
+
+    .delete{
+        letter-spacing: 0.75px;
+    }
+
+    .prescriptiondate,
+    .prescriptiondesc,
+    .drname{
+        font-size: 15px;
+        letter-spacing: 0.5px;
+}
+    .reportdate,
+    .reportdesc,
+    .drname{
+        font-size: 15px;
+        letter-spacing: 0.5px;
+}
+
+    .results{
+        height: 480px;
+    }
+
+}
+
+@media only screen and (max-width: 992px) {
+    .results{
+        height: 350px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    
+}
+
+@media only screen and (max-width: 600px) {
+    
+}
+
+@media only screen and (max-width: 600px) {
+    
+}

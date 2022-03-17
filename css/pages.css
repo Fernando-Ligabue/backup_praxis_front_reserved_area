@@ -1,0 +1,1206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--clear);
+}
+
+
+
+/* LOGIN PAGE */
+
+.main-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 160px;
+}
+.main-logo img{
+    width: 153.27px;
+    height: 212.65px;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100.35px;
+}
+
+.login input {
+    width: 250px;
+    height: 45px;
+    margin-top: 15px;
+    padding: 25px 12px;
+    border: 1px solid var(--mediumGray);
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.login-btn{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 15px 40px;
+margin-top: 20px;
+color: var(--clear);
+font-family: 'Cabin', sans-serif;
+font-weight: 700;
+width: 150px;
+height: 51px;
+left: calc(50% - 150px/2);
+background: var(--darkGray);
+border-radius: 5px;
+border: none;
+}
+
+.forgot-pass{
+    margin-top: 15px;
+    color: var(--goldenBrown);
+    font-family: 'Cabin', sans-serif;
+    font-weight: 700;
+    text-decoration: underline;
+}
+.forgot-pass:visited{
+    margin-top: 21px;
+    color: var(--goldenBrown);
+    font-family: 'Cabin', sans-serif;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.consultas-btn{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 15px 36px;
+color: var(--clear);
+font-family: 'Cabin', sans-serif;
+font-weight: 700;
+width: 245px;
+height: 51px;
+left: calc(50% - 245px/2 + 0.5px);
+margin-top: 91px;
+margin-bottom: 160px;
+background: var(--darkGray);
+border-radius: 5px;
+}
+
+/* INICIO ADMIN E PROFESSIONAL PAGES */
+.logo-sup{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    height: 90px;
+}
+.logo-sup > img {
+    width: 82.64px;
+    height: 53.04px;
+    margin-top: 2rem;
+    margin-right: 58.36px;
+}
+
+.tab-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+
+
+/* ADMIN PANEL LISTA UTENTES */
+.users{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+}
+
+.tab_first,
+.tab_first a,
+.tab_first a:visited{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 25px;
+    list-style: none;
+    width: 143px;
+    height: 51px;
+    left: 571px;
+    top: 71px;
+    color: var(--midBrow);
+    background-color: var(--darkGray);
+    text-align: center;
+    border-radius: 15px 15px 0px 0px;
+    text-decoration: none;
+}
+
+.tab_first > span,
+.tab_first a > span{
+    color: var(--midBrow);
+    background-color: var(--darkGray);
+    font-size: 17.5px;
+    width: 17.5px;
+    height: 17.5px;
+    margin: 0px 5px;
+}
+
+.first{
+    background-color: var(--darkGray);
+    color: var(--midBrow);
+}
+
+.tab_second,
+.tab_second a,
+.tab_second a:visited{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 25px;
+    width: 145px;
+    height: 51px;
+    left: 714px;
+    top: 71px;
+    color: var(--darkGray);
+    background: var(--clear);
+    border-radius: 15px 15px 0px 0px;
+    text-decoration: none;
+}
+
+.tab_second > span,
+.tab_second a > span{
+    width:17.5px;
+    height:17.5px;
+    color: var(--darkGray);
+    background-color: var(--clear);
+    font-size: 17.5px;
+    margin: 0px 5px;
+}
+
+.second{
+    background-color: var(--clear);
+    color: var(--darkGray);
+    width: 255px;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--darkGray);
+    width: 100%;
+    height: 60px;
+    top: 141px;
+}
+
+.search > input {
+    padding: 5px 21px;
+    max-width: 399px;
+    min-width: 310px;
+    height: 30px;
+    top: 16px;
+    background: var(--clear);
+    border-radius: 50px;
+    margin: 0 5px;
+}
+
+/* Section cards con infos utentes */
+.results{
+    width: 100%;
+    height: 400px;
+    overflow-y: scroll;
+}
+
+.results::-webkit-scrollbar {
+    width: 25px;
+    background-color: var(--lightGray);
+}
+
+.results::-webkit-scrollbar-thumb {
+    background-color: var(--darkGray);
+}
+
+/* CARD PRESENTE EM TODAS AS PAGES */
+.card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    max-width: 95%;
+    margin: 10px 0 10px 5%;
+    height: 95px;
+    background: linear-gradient(270deg, var(--clear) 0%, var(--midBrow) 100%);
+    border-radius: 10px;
+}
+
+.profile_photo{
+    background-color: transparent;
+    width: 60px;
+    height: 60px;
+    margin: 10px 50px 10px 15px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.profile_photo > span {
+    background-color: transparent;
+    color: var(--darkGray);
+    font-size: 60px !important;
+}
+
+.user_description{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    max-width: 275px;
+    height: 70px;
+    left: 120px;
+    top: 10px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.username{
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    margin-bottom: 5px;
+    width: 245px;
+    height: 24px;
+}
+
+.userId{
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    margin-bottom: 5px;
+    width: 245px;
+    height: 21px;
+    top: 29px;
+}
+
+.birth_date{
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    width: 245px;
+    height: 15px;
+    top: 55px;
+}
+.toggle_btn{
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    transform: rotate(-90deg);
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.toggle_btn > span{
+    background-color: transparent;
+    color: var(--darkGray);
+}
+
+.options{
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    width: 100%;
+    max-width: 500px;
+    height: 42px;
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+    margin: 0px 50px;
+}
+
+.see_docs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
+    width: 199px;
+    height: 42px;
+    background: var(--darkGray);
+    border-radius: 5px;
+    margin: 0 15px 0 0;
+    color: var(--clear);
+}
+
+.see_docs > span{
+    color: var(--clear);
+    font-size: 18px;
+    margin: 0 5px;
+}
+
+.upload_docs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
+    width: 196px;
+    height: 42px;
+    border: 1px solid var(--darkGray);
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+.upload_docs > span{
+    background-color: transparent;
+    color: var(--darkGray);
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.edit{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
+    width: 149px;
+    height: 42px;
+    background: var(--darkGray);
+    border-radius: 5px;
+    margin: 0px 15px;
+    color: var(--clear);
+}
+
+.edit > span {
+    color: var(--clear);
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.delete{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
+    width: 118px;
+    height: 42px;
+    border: 1px solid var(--darkGray);
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+.delete > span {
+    background-color: transparent;
+    color: var(--darkGray);
+    font-size: 18px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--darkGray);
+    position: fixed;
+    width: 100%;
+    height: 133px;
+    bottom: 0;
+}
+
+.create {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 45px;
+    width: 213px;
+    height: 51px;
+    left: 629px;
+    top: 932px;
+    border: 1px solid var(--clear);
+    background-color: var(--darkGray);
+    border-radius: 5px;
+}
+
+.create > span{
+    font-size: 16.67px;
+    color: var(--clear);
+    /* margin-top: 2px; */
+}
+.new{
+    background-color: var(--darkGray);
+    color: var(--clear);
+}
+
+
+/* ADMIN LISTA PROFISSIONAIS */
+
+.edit_dados{
+    margin: 0px 0px 15px;
+}
+
+.see_utentes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
+    width: 141px;
+    height: 42px;
+    left: 164px;
+    top: 0px;
+    border: 1px solid var(--darkGray);
+    background-color: transparent;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin: 0 15px;
+    color: var(--darkGray);
+}
+
+.see_utentes > span{
+    background-color: transparent;
+    color: var(--darkGray);
+    width: 18px;
+    height: 18px;
+    font-size: 18px;
+    margin-right: 1px;
+}
+
+/* Page lista de utentes alocados ao profissional */
+.back_to{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 7.2rem;
+    left: 2rem;
+    bottom: 89.55%;
+    border-radius: 5px;
+}
+
+.back{
+    color: var(--darkGray);
+    margin: 0 5px;
+    background-color: transparent;
+}
+
+.back > span{
+    color: var(--darkGray);
+    font-size: 16px;
+    vertical-align: text-bottom;
+}   
+
+.return,
+.return:visited{
+    text-decoration: none;
+}
+
+.divider{
+    background-color: var(--darkGray);
+    width: 100%;
+    height: 5px;
+    top: 141px;
+}
+
+.info_utente,
+.info_professional{
+    width: 100%;
+    height: fit-content;
+    margin: 0;
+}
+.card.card-utente,
+.card.card-pro{
+    border-radius: 0px 10px;
+    margin-top: 0;
+}
+
+.see_docs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
+    background: var(--darkGray);
+    border: none;
+    border-radius: 5px;
+}
+
+.see_docs > span{
+    color: var(--clear);
+    font-size: 18px;
+    margin: 0 5px;
+}
+
+/*  PAGES EDITA UTENTE E EDITA PROFISSIONAL, MODAL DE INSERÇÂO DE NOVOS UTILIZADORES*/
+.edit_container{
+    width: 100%;
+    max-width: 850px;
+    margin: 20px 0px;
+}
+
+.modal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 587px;
+}
+
+.modal_columns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_edit_left{
+    width: 400px;
+    height: 585px;
+    margin: 0px 25px;
+}
+
+.header_left{
+    width: 100%;
+}
+
+.header_left .h4{
+    width: 400px;
+    height: 51px;
+    color: var(--darkGray);
+}
+
+.name > input{
+    padding: 12px 25px;
+    margin: 5px 0px;
+    width: 400px;
+    height: 45px;
+    border: 1px solid var(--lightGray);
+    border-radius: 5px;
+}
+
+.gender > select{
+    padding: 12px 25px;
+    margin: 5px 0px;
+    width: 400px;
+    height: 45px;
+    border: 1px solid var(--lightGray);
+    border-radius: 5px;
+    color: var(--mediumGray);
+}
+
+.selection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 400;
+}
+
+#birthday{
+    padding: 12px 15px 12px 12px;;
+    margin: 5px 0px;
+    width: 75px;
+    height: 45px;
+    border: 1px solid var(--lightGray);
+    border-radius: 5px;
+    color: var(--mediumGray);
+}
+
+#mounth{
+    padding: 12px 15px 12px 12px;;
+    margin: 5px 0px;
+    width: 200px;
+    height: 45px;
+    border: 1px solid var(--lightGray);
+    border-radius: 5px;
+    color: var(--mediumGray);
+}
+
+#year{
+    padding: 12px 15px 12px 12px;;
+    margin: 5px 0px;
+    width: 100px;
+    height: 45px;
+    border: 1px solid var(--lightGray);
+    border-radius: 5px;
+    color: var(--mediumGray);
+}
+
+.identify{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px;
+    width: 400px;
+}
+
+.docs_id > input{
+    display: flex;
+    flex-direction: row;
+    padding: 12px 25px;
+    margin: 5px 0px;
+    width: 193px;
+    height: 45px;
+    border: 1px solid #C7C3BA;
+    border-radius: 5px;
+}
+
+.email > input{
+    display: flex;
+    flex-direction: row;
+    padding: 12px 25px;
+    margin: 5px 0px;
+    width: 400px;
+    height: 45px;
+    border: 1px solid #C7C3BA;
+    border-radius: 5px;
+}
+
+.phone > input{
+    display: flex;
+    flex-direction: row;
+    padding: 12px 25px;
+    margin: 5px 0px;
+    width: 400px;
+    height: 45px;
+    border: 1px solid #C7C3BA;
+    border-radius: 5px;
+}
+
+.form_edit_right{
+    width: 400px;
+    height: 585px;
+    margin: 0px 25px;
+}
+
+.header_rigth.h4{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 400px;
+    height: 51px;
+    color: var(--darkGray);
+}
+
+.header_rigth > span{
+    background-color: var(--clear);
+    color: var(--darkGray);
+    width: 30px;
+    height: 30px;
+    /* margin: 10px 0px 0px 5px; */
+}
+
+.country > select{
+    padding: 12px 25px;
+    margin: 5px 0px;
+    width: 400px;
+    height: 45px;
+    border: 1px solid var(--lightGray);
+    border-radius: 5px;
+    color: var(--mediumGray);
+}
+
+.district > select{
+    padding: 12px 25px;
+    margin: 5px 0px;
+    width: 400px;
+    height: 45px;
+    border: 1px solid var(--lightGray);
+    border-radius: 5px;
+    color: var(--mediumGray);
+}
+
+.address > input{
+    padding: 12px 25px;
+    margin: 5px 0px;
+    width: 400px;
+    height: 45px;
+    border: 1px solid var(--lightGray);
+    border-radius: 5px;
+}
+
+.zip_code_fields{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.field_1{
+    padding: 12px 25px 12px 12px;
+    margin: 5px 0px;
+    width: 101px;
+    height: 45px;
+    border: 1px solid var(--lightGray);
+    border-radius: 5px;
+}
+
+.field_2{
+    padding: 12px 25px 12px 12px;
+    margin: 5px 0px;
+    width: 75px;
+    height: 45px;
+    border: 1px solid var(--lightGray);
+    border-radius: 5px;
+}
+
+.location{
+    padding: 12px 25px 12px 12px;
+    margin: 5px 0px;
+    width: 200px;
+    height: 45px;
+    border: 1px solid var(--lightGray);
+    border-radius: 5px;
+}
+
+.professional > select{
+    padding: 12px 25px;
+    margin: 5px 0px;
+    width: 400px;
+    height: 45px;
+    border: 1px solid var(--lightGray);
+    border-radius: 5px;
+    color: var(--mediumGray);
+}
+
+.btn_form{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    height: 45px;
+    margin: 25px 0px 0px 0px;
+}
+
+.submit_form{
+    padding: 15px 45px;
+    width: 183px;
+    height: 45px;
+    background: var(--lightGray);
+    border-radius: 5px;
+    color: var(--clear);
+    border: 1px solid var(--clear);
+}
+
+.cancel{
+    padding: 15px 45px;
+    width: 167px;
+    height: 45px;
+    background:  var(--clear);
+    border-radius: 5px;
+    color: var(--lightGray);
+    border: 1px solid var(--lightGray);
+}
+
+/* ADMIN PRESCRIPTION PAGE */
+.prescription{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 0px;
+}
+
+.upload {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
+    width: 244px;
+    height: 42px;
+    background: var(--darkGray);
+    color: var(--clear);
+    border-radius: 5px;
+    margin: 0 15px;
+}
+
+.prescription_description{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    margin-right: 15px;
+    height: 70px;
+    min-width: 250px;
+}
+
+.prescriptiondate,
+.prescriptiondesc,
+.drname{
+    background-color: transparent;
+}
+
+/* ADMIN REPORTS PAGE */
+.reports{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 0px;
+}
+
+.report_description{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    margin-right: 15px;
+    height: 70px;
+    min-width: 250px;
+}
+
+.icon_type {
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    margin: 30px 15px 30px 10px;
+}
+.report_description,
+.reportdate,
+.reportdesc,
+.drname{
+    background-color: transparent;
+}
+
+/* ADMIN MULTIMEDIA PAGE */
+
+.multimedia{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 0px;
+}
+
+.video-grid {
+    top: 378px;
+    width: 100%;
+    height: 400px;
+    overflow-y: scroll;
+}
+.video-grid::-webkit-scrollbar {
+    width: 25px;
+    background-color: var(--lightGray);
+}
+.video-grid::-webkit-scrollbar-thumb {
+    background-color: var(--darkGray);
+}
+
+.video-list {
+    margin: 1em auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    gap: 30px;
+    max-width: 1110px;
+}
+
+.video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img-top{
+    background: var(--darkGray);
+    width: 330px;
+    height: 180px;
+}
+
+.info_multimedia{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 330px;
+    color: var(--darkGray);
+}
+
+.play{
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
+.play > span{
+    font-size: 25px;
+    color: var(--mediumGray);
+}
+
+.desc, .date, .drname{
+    margin-bottom: 5px;
+}
+
+.delete_file{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
+    width: 118px;
+    height: 42px;
+    background: linear-gradient(45deg, #E2C695 0%, #C7C3BA 100%);
+    color: var(--darkGray);
+    border: none;
+    border-radius: 5px;  
+}
+/* ----------------------------------------------------------------------------------------- */
+/* END ADMIN PAGES */
+/* ----------------------------------------------------------------------------------------- */
+
+/* INICIO UTENTES PAGES */
+/* REPORTS PAGE UTENTES */
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}  
+
+.first_tab_utentes{
+    width: 255px;
+}
+
+/* MULTIMEDIA PAGE UTENTES */
+.reports_tab,
+.reports_tab a,
+.reports_tab a:visited{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    width: 255px;
+    height: 51px;
+    left: 714px;
+    top: 71px;
+    color: var(--darkGray);
+    background: var(--clear);
+    border-radius: 15px 15px 0px 0px;
+    text-decoration: none;
+}
+
+/* HELP PAGE UTENTES */
+.help_title{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 0px;
+}
+
+.help_textbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.help_area{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 25px;
+    width: 700px;
+    height: 300px;
+    left: 370px;
+    top: 278px;
+
+}
+.help_text{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 25px;
+    width: 700px;
+    height: 300px;
+    background: #F3EFE8;
+    border: 1px solid #C7C3BA;
+    box-sizing: border-box;
+    border-radius: 10px;
+    resize: none;
+    color: var(--lightGray);
+}
+
+.submit{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 36px;
+    width: 245px;
+    height: 51px;
+    color: var(--clear);
+    background: var(--darkGray);
+    border:none;
+    border-radius: 5px;
+}
+
+
+/* MODAL INSERIR DOCUMENTOS */
+/* style modal inserção de novos documentos */
+
+.documents_container{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.documents_modal{
+    width: 970px;
+    height: 665px;
+}
+
+.doc_modal_columns{
+    margin: 50px 60px;
+}
+
+.form_documents_left{
+    width: 400px;
+    height: 585px;
+    margin: 0px 25px;
+}
+
+.doc_header_left{
+    width: 100%;
+}
+
+.doc_header_left .h4{
+    width: 400px;
+    height: 51px;
+    color: var(--darkGray);
+}
+
+.container{
+    width: 416px;
+    height: 471px;
+}
+
+.doc-options{
+    width: 306px;
+    height: 253px;
+}
+
+.doc-type{
+}
+
+.doc-type > input{
+    width: 306px;
+    height: 33px;
+    background-color: transparent;
+    border: 1px solid var(--lightGray);
+    border-radius: 5px;
+}
+
+.dropdown{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5px 5px 5px 0px;
+    width: 242px;
+    height: 25px;
+    background: var(--clear);
+}
+
+.btn-dropdown-toggle{
+}
+.btn-dropdown-toggle > span{
+    transform: rotate(-180deg);
+}
+
+.dropdown-menu{
+}
+
+.check{
+}
+
+.check-label{
+}
+
+.toggle-modal{
+}
+
+.doc-include{
+}
+
+.doc-include > input{
+}
+
+.btn-dropdown-toggle2{
+}
+
+.material-icons.play_circle {
+}
+
+.doc-exclude.video{
+}
+
+.doc-include2{
+}
+
+.doc-include2 > input{
+}
+
+.btn-dropdown-toggle3{
+}
+
+.material-icons.content_paste {
+}
+
+.doc-exclude.report{
+}
+
+.form_documents_right{
+}
+
+.header_rigth{
+}
+
+.header_rigth > span{
+}
+
+.up-docs{
+}
+.up-docs > p{
+}
+
+.upl-docs{
+}
+
+.btn_form{
+}
+
+.submit{
+}
+
+.cancel{
+}
+
+

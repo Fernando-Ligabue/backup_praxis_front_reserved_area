@@ -4,7 +4,9 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="admin_edita_utente.css">
+        <link rel="stylesheet" href="../css/global.css">
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/breakpoints.css">
         <link
             href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
             rel="stylesheet">
@@ -20,17 +22,17 @@
     
             <div class="tab-bar">
 
-                <div class="back_to">
+                <div class="back_to button">
                     <a class="return"href="admin_panel_utentes.html" rel="noopener noreferrer">
-                        <p class="back"><span class="material-icons">arrow_back_ios</span>LISTA DE UTENTES</p>
+                        <p class="back button"><span class="material-icons">arrow_back_ios</span>LISTA DE UTENTES</p>
                     </a>
                 </div>
                 <ul class="users">
-                    <li class="utentes"><span class="material-icons material-icons-outlined ">account_circle_outlined</span>
-                        <p class="first">UTENTES</p>
+                    <li class="tab_first"><span class="material-icons-outlined ">account_circle_outlined</span>
+                        <p class="first button">UTENTES</p>
                     </li>
-                    <li class="pros"><a href="admin_panel_professional.html"><span class="material-icons material-icons-outlined ">badge_outlined</span>
-                        <p class="second">MÉDICOS</p></a>
+                    <li class="tab_second"><a href="admin_panel_professional.html"><span class="material-icons-outlined ">badge_outlined</span>
+                        <p class="second button">MÉDICOS</p></a>
                     </li>
                 </ul>
 
@@ -40,28 +42,28 @@
             </div>
 
             <div class="info_utente">
-                <div class="card">
+                <div class="card card-utente">
                     <div class="profile_photo">
-                        <span class="material-icons material-icons-outlined md-48">account_circle</span>
+                        <span class="material-icons-outlined">account_circle</span>
                     </div>
 
                     <div class="user_description">
-                        <div class="username">Nome do utente</div>
-                        <div class="userId">321321321</div>
-                        <div class="birth_date">20 DE MARÇO DE 1968 </div>
+                        <div class="username sub1">Nome do utente</div>
+                        <div class="userId body2">321321321</div>
+                        <div class="birth_date overline">20 DE MARÇO DE 1968 </div>
                     </div>
 
                     <div class="toggle_btn">
-                        <span class="material-icons material-icons-outlined">cancel</span>
+                        <span class="material-icons-outlined">cancel</span>
                     </div>
 
                     <div class="options">
-                        <button class="see_docs"><span class="material-icons material-icons-outlined">description</span> VER
+                        <button class="see_docs overline"><span class="material-icons material-icons-outlined">description</span> VER
                             DOCUMENTOS <span class="material-icons ">arrow_drop_down</span></button>
-                        <button class="upload_docs"><span
+                        <button class="upload_docs overline"><span
                                 class="material-icons material-icons-outlined">file_upload</span>UPLOAD DOCUMENTOS</button>
-                        <button class="edit"><span class="material-icons">edit</span>EDITAR DADOS</button>
-                        <button class="delete"><span
+                        <button class="edit overline"><span class="material-icons">edit</span>EDITAR DADOS</button>
+                        <button class="delete overline"><span
                                 class="material-icons material-icons-outlined">remove_circle_outlined</span>REMOVER</button>
                     </div>
                 </div>
@@ -74,29 +76,29 @@
 
                     <div class="form_edit_left">
                         <form action="" class="edit-left">
-                            <div class="header_left">
-                                <h4>Editar Dados</h4>
+                            <div class="header_left h4">
+                                <h4 class="h4">Editar Dados</h4>
                             </div>
 
-                            <div class="name">
+                            <div class="name body1">
                                 <p>Nome</p>
-                                <input type="text" placeholder="Indique seu nome">
+                                <input class="body2" type="text" placeholder="Indique seu nome">
                             </div>
 
-                            <div class="gender">
+                            <div class="gender body1">
                                 <p>Gênero</p>
-                                <select name="gender_value" id="gender">
-                                    <option value="indique o gênero" selected> Indique o gênero</option>
-                                    <option value="masculino">Masculino</option>
-                                    <option value="feminino">Feminino</option>
-                                    <option value="not">Não informado</option>
+                                <select class="body2" name="gender_value" id="gender">
+                                    <option class="body2" value="indique o gênero" selected> Indique o gênero</option>
+                                    <option class="body2" value="masculino">Masculino</option>
+                                    <option class="body2" value="feminino">Feminino</option>
+                                    <option class="body2" value="not">Não informado</option>
                                 </select>
                             </div>
 
-                            <div class="birthday">
+                            <div class="birthday body1">
                                 <p>Data de Nascimento</p>
                                 <div class="selection">
-                                    <select name="day_value" id="birthday">
+                                    <select class="body2" name="day_value" id="birthday">
                                         <option value="dai" selected> Dia</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -164,80 +166,80 @@
                                 </div>
                             </div>
 
-                            <div class="identify">
-                                <div class="docs_id">
+                            <div class="identify body1">
+                                <div class="docs_id body2">
                                     <p>Nº CC/BI </p>
-                                    <input type="text" placeholder="Indique o CC ou BI">
+                                    <input class="docs_id body2" type="text" placeholder="Indique o CC ou BI">
                                 </div>
-                                <div class="docs_id">
+                                <div class="docs_id body2">
                                     <p>NIF </p>
-                                    <input type="text" placeholder="Indique o NIF">
+                                    <input class="body2" type="text" placeholder="Indique o NIF">
                                 </div>
                             </div>
 
-                            <div class="email">
+                            <div class="email body1">
                                 <p>E-mail</p>
-                                <input type="text" placeholder="Indique o e-mail">
+                                <input class="body2"type="text" placeholder="Indique o e-mail">
                             </div>
 
-                            <div class="phone">
+                            <div class="phone body1">
                                 <p>Telemóvel</p>
-                                <input type="text" placeholder="Indique o número de telemovel">
+                                <input class="body2" type="text" placeholder="Indique o número de telemovel">
                             </div>
                         </form>
                     </div>
 
                     <div class="form_edit_right">
                         <form action="" class="edit-right">
-                            <div class="header_rigth">
+                            <div class="header_rigth h4">
                                 <span class="material-icons-outlined">cancel</span>
                             </div>
-                            <div class="country">
+                            <div class="country body1">
                                 <p>País</p>
-                                <select name="country_value" id="country">
-                                    <option value="indique o pais" selected> Indique o país</option>
-                                    <option value="Portugal">Portugal</option>
-                                    <option value="França">França</option>
-                                    <option value="Alemanha">Alemanha</option>
+                                <select class="body2" name="country_value" id="country">
+                                    <option class="body2" alue="indique o pais" selected> Indique o país</option>
+                                    <option class="body2" value="Portugal">Portugal</option>
+                                    <option class="body2" value="França">França</option>
+                                    <option class="body2" value="Alemanha">Alemanha</option>
                                 </select>
                             </div>
 
-                            <div class="district">
+                            <div class="district body1">
                                 <p>Distrito</p>
-                                <select name="district_value" id="district">
-                                    <option value="indique o distrito" selected> Indique o Distrito</option>
-                                    <option value="Lisboa">Lisboa</option>
-                                    <option value="Porto">Porto</option>
-                                    <option value="Faro">Faro</option>
+                                <select class="body2" name="district_value" id="district">
+                                    <option class="body2" value="indique o distrito" selected> Indique o Distrito</option>
+                                    <option class="body2" value="Lisboa">Lisboa</option>
+                                    <option class="body2" value="Porto">Porto</option>
+                                    <option class="body2" value="Faro">Faro</option>
                                 </select>
                             </div>
 
-                            <div class="address">
+                            <div class="address body1">
                                 <p>Morada</p>
-                                <input type="text" placeholder="Indique a morada">
+                                <input class="body2" type="text" placeholder="Indique a morada">
                             </div>
 
-                            <div class="zip_code">
+                            <div class="zip_code body1">
                                 <p>Código Postal</p>
-                                <div class="zip_code_fields">
-                                    <input class="field_1" type="text" placeholder="xxxx">
-                                    <input class="field_2" type="text" placeholder="xxx">
-                                    <input class="location" type="text" placeholder="Localidade">
+                                <div class="zip_code_fields body2">
+                                    <input class="field_1 body2" type="text" placeholder="xxxx">
+                                    <input class="field_2 body2" type="text" placeholder="xxx">
+                                    <input class="location body2" type="text" placeholder="Localidade">
                                 </div>
                             </div>
 
-                            <div class="professional">
+                            <div class="professional body1">
                                 <p>Profissional</p>
-                                <select name="pro_value" id="professional">
-                                    <option value="Selecione o Profissional" selected>Selecione o Profissional</option>
-                                    <option value="Doutor 1">Doutor 1</option>
-                                    <option value="Doutor 2">Doutor 2</option>
-                                    <option value="Doutor 3">Doutor 3</option>
+                                <select class="body2" name="pro_value" id="professional">
+                                    <option class="body2" value="Selecione o Profissional" selected>Selecione o Profissional</option>
+                                    <option class="body2" value="Doutor 1">Doutor 1</option>
+                                    <option class="body2" value="Doutor 2">Doutor 2</option>
+                                    <option class="body2" value="Doutor 3">Doutor 3</option>
                                 </select>
                             </div>
 
                             <div class="btn_form">
-                                <button class="submit">SUBMETER</button>
+                                <button class="submit_form">SUBMETER</button>
                                 <button class="cancel">CANCELAR</button>
                             </div>
                         </form>
