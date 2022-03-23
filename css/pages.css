@@ -314,16 +314,16 @@ border-radius: 5px;
 .toggle_btn > span{
     background-color: transparent;
     color: var(--darkGray);
+    cursor: pointer;
 }
 
 .options{
     background-color: transparent;
     display: flex;
-    flex-direction: row;
     align-items: flex-start;
     padding: 0px;
     width: 100%;
-    max-width: 500px;
+    max-width: 700px;
     height: 42px;
     flex: none;
     order: 3;
@@ -331,6 +331,7 @@ border-radius: 5px;
     margin: 0px 50px;
 }
 
+/* BUTTONS */
 .see_docs{
     display: flex;
     flex-direction: row;
@@ -343,11 +344,12 @@ border-radius: 5px;
     border-radius: 5px;
     margin: 0 15px 0 0;
     color: var(--clear);
+    cursor: pointer;
 }
 
 .see_docs > span{
     color: var(--clear);
-    font-size: 18px;
+    font-size: 15px;
     margin: 0 5px;
 }
 
@@ -362,18 +364,18 @@ border-radius: 5px;
     border: 1px solid var(--darkGray);
     background-color: transparent;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .upload_docs > span{
     background-color: transparent;
     color: var(--darkGray);
-    font-size: 18px;
+    font-size: 15px;
     margin-right: 5px;
 }
 
 .edit{
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 12px 20px;
@@ -383,17 +385,17 @@ border-radius: 5px;
     border-radius: 5px;
     margin: 0px 15px;
     color: var(--clear);
+    cursor: pointer;
 }
 
 .edit > span {
     color: var(--clear);
-    font-size: 18px;
+    font-size: 15px;
     margin-right: 5px;
 }
 
 .delete{
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 12px 20px;
@@ -402,12 +404,13 @@ border-radius: 5px;
     border: 1px solid var(--darkGray);
     background-color: transparent;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .delete > span {
     background-color: transparent;
     color: var(--darkGray);
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .footer {
@@ -423,7 +426,6 @@ border-radius: 5px;
 
 .create {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 15px 45px;
@@ -434,12 +436,12 @@ border-radius: 5px;
     border: 1px solid var(--clear);
     background-color: var(--darkGray);
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .create > span{
     font-size: 16.67px;
     color: var(--clear);
-    /* margin-top: 2px; */
 }
 .new{
     background-color: var(--darkGray);
@@ -455,7 +457,6 @@ border-radius: 5px;
 
 .see_utentes{
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 12px 20px;
@@ -469,6 +470,7 @@ border-radius: 5px;
     border-radius: 5px;
     margin: 0 15px;
     color: var(--darkGray);
+    cursor: pointer;
 }
 
 .see_utentes > span{
@@ -476,7 +478,7 @@ border-radius: 5px;
     color: var(--darkGray);
     width: 18px;
     height: 18px;
-    font-size: 18px;
+    font-size: 15px;
     margin-right: 1px;
 }
 
@@ -542,11 +544,62 @@ border-radius: 5px;
 
 .see_docs > span{
     color: var(--clear);
-    font-size: 18px;
+    font-size: 15px;
     margin: 0 5px;
 }
 
 /*  PAGES EDITA UTENTE E EDITA PROFISSIONAL, MODAL DE INSERÇÂO DE NOVOS UTILIZADORES*/
+#modal_cadastro{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal_container_documents{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.modal_insert{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 60px;
+    position: absolute;
+    width: 970px;
+    height: 667px;
+    background: var(--clear);
+    border-radius: 15px;
+}
+
+.modal_docs{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 60px;
+    position: absolute;
+    width: 970px;
+    height: 667px;
+    background: var(--clear);
+    border-radius: 15px;
+}
+
 .edit_container{
     width: 100%;
     max-width: 850px;
@@ -566,6 +619,10 @@ border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.close{
+    background-color: none;
+    border: none;
 }
 
 .form_edit_left{
@@ -703,9 +760,11 @@ border-radius: 5px;
     color: var(--darkGray);
     width: 30px;
     height: 30px;
-    /* margin: 10px 0px 0px 5px; */
 }
 
+.close{
+    cursor: pointer;
+}
 .country > select{
     padding: 12px 25px;
     margin: 5px 0px;
@@ -795,6 +854,7 @@ border-radius: 5px;
     border-radius: 5px;
     color: var(--clear);
     border: 1px solid var(--clear);
+    cursor: pointer;
 }
 
 .cancel{
@@ -805,6 +865,7 @@ border-radius: 5px;
     border-radius: 5px;
     color: var(--lightGray);
     border: 1px solid var(--lightGray);
+    cursor: pointer;
 }
 
 /* ADMIN PRESCRIPTION PAGE */
@@ -829,6 +890,7 @@ border-radius: 5px;
     color: var(--clear);
     border-radius: 5px;
     margin: 0 15px;
+    cursor: pointer;
 }
 
 .prescription_description{
@@ -1054,6 +1116,7 @@ border-radius: 5px;
     background: var(--darkGray);
     border:none;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 
@@ -1068,7 +1131,7 @@ border-radius: 5px;
     top: 0;
     left: 0;
     z-index: 5;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 }
@@ -1099,21 +1162,62 @@ border-radius: 5px;
 }
 
 .container{
-    width: 416px;
+    width: 391px;
     height: 471px;
 }
 
+.scroll_docs{
+    width: 418px;
+    height: 471px;
+    overflow-y: scroll;
+}
+
+.scroll_docs::-webkit-scrollbar {
+    width: 25px;
+    background-color: var(--lightGray);
+}
+
+.scroll_docs::-webkit-scrollbar-thumb {
+    background-color: var(--darkGray);
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    width: 375px;
+    height: 24px;
+    margin: 9px 0px 4px 0px;
+}
+
+.document{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
 .doc-options{
-    width: 306px;
-    height: 253px;
+    background: linear-gradient(270deg, var(--clear) 0%, var(--midBrow) 100%);
+    width: 391px;
+    height: 277px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 25px;
+    width: 391px;
+    height: 277px;
+    border-radius: 5px;
+    margin-bottom: 10px; 
 }
 
 .doc-type{
+    background-color: transparent;
 }
 
 .doc-type > input{
     width: 306px;
     height: 33px;
+    padding: 10px;
     background-color: transparent;
     border: 1px solid var(--lightGray);
     border-radius: 5px;
@@ -1130,39 +1234,93 @@ border-radius: 5px;
 }
 
 .btn-dropdown-toggle{
-}
-.btn-dropdown-toggle > span{
-    transform: rotate(-180deg);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 5px 5px 0px;
+    width: 242px;
+    height: 25px;
+    background: var(--clear);
+    color: var(--mediumGray);
 }
 
 .dropdown-menu{
+    width: 242px;
+    height: 190px;
+    border-radius: 0px 0px 5px 5px;
+    margin: 0px;
 }
 
 .check{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    width: 90px;
+    height: 20px;
+    margin: 5px;
 }
 
 .check-label{
+    margin-left: 5px;
 }
 
 .toggle-modal{
+    width: 30px;
+    height: 30px;
+    margin: 55px 10px 30px 270px;
+    background-color: transparent;
+    color: var(--darkGray);
 }
 
+
 .doc-include{
+    display: flex;
+    flex-direction: column;
+    width: 391px;
+    height: 87px;
+    padding: 12px 25px;
+    background: linear-gradient(270deg, #F3EFE8 0%, #E2C695 100%);
+    border-radius: 5px;
 }
 
 .doc-include > input{
-}
-
-.btn-dropdown-toggle2{
+    padding: 6px;
+    width: 280px;
+    height: 33px;
+    background-color: transparent;
+    border: 1px solid var(--lightGray);
+    border-radius: 5px;
+    color: var(--darkGray);
 }
 
 .material-icons.play_circle {
+    display: flex;
+    font-size: 12.5px;
+    width: 15px;
+    height: 15px;
+    color: var(--darkGray);
 }
 
+.btn-dropdown-toggle2{
+    display: flex;
+    align-items: center;
+    padding: 5px 5px 5px 0px;
+    margin: 5px 0px;
+    width: 242px;
+    height: 25px;
+    background-color: transparent;
+    border: none;
+}
 .doc-exclude.video{
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    margin: 28.5px 25px 28.5px 5px; 
 }
 
-.doc-include2{
+
+/*.doc-include2{
 }
 
 .doc-include2 > input{
@@ -1175,32 +1333,83 @@ border-radius: 5px;
 }
 
 .doc-exclude.report{
-}
+}*/
 
 .form_documents_right{
+    width: 400px;
+    height: 585px;
+    margin: 35px 15px 0px;
 }
 
 .header_rigth{
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
 
 .header_rigth > span{
+    cursor: pointer;
 }
 
 .up-docs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 117px;
+    left: 0px;
+    margin-top: 52px;
+    border: 1px dashed var(--darkGray);
+    border-radius: 15px;
+    color: var(--mediumGray);
 }
 .up-docs > p{
+    margin: 10px;
 }
 
 .upl-docs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 45px 15px 35px;
+    width: 187px;
+    height: 51px;
+    margin-top: 15px;
+    background: var(--darkGray);
+    border-radius: 5px;
+    color: var(--clear);
+    border: 1px solid var(--clear);
+    cursor: pointer;
 }
 
-.btn_form{
+.upl-docs > span{
+    margin-right: 10px;
 }
 
-.submit{
+.submit_doc{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 36px;
+    width: 170px;
+    height: 51px;
+    color: var(--clear);
+    background: var(--darkGray);
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.cancel{
+
+.cancel_doc{
+    padding: 15px 45px;
+    width: 167px;
+    height: 45px;
+    background:  var(--clear);
+    border-radius: 5px;
+    color: var(--darkGray);
+    border: 1px solid var(--darkGray);
+    cursor: pointer;
 }
-
-

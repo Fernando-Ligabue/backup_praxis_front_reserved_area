@@ -39,7 +39,7 @@
         <section class="results">
             <div class="card">
                 <div class="profile_photo">
-                    <span class="material-icons material-icons-outlined md-48">account_circle</span>
+                    <span class="material-icons-outlined">account_circle</span>
                 </div>
 
                 <div class="user_description">
@@ -49,22 +49,22 @@
                 </div>
 
                 <div class="toggle_btn">
-                    <span class="material-icons material-icons-outlined">expand_circle_down</span>
+                    <span class="material-icons-outlined">expand_circle_down</span>
                 </div>
 
                 <!-- <div class="options">
-                    <button class="see_docs overline"><span class="material-icons material-icons-outlined">description</span> VER
+                    <button class="see_docs overline"><span class="material-icons-outlined">description</span> VER
                         DOCUMENTOS <span class="material-icons ">arrow_drop_down</span></button>
                     <button class="upload_docs overline"><span
-                            class="material-icons material-icons-outlined">file_upload</span>UPLOAD DOCUMENTOS</button>
+                            class="material-icons-outlined">file_upload</span>UPLOAD DOCUMENTOS</button>
                     <button class="edit overline"><span class="material-icons">edit</span>EDITAR DADOS</button>
                     <button class="delete overline"><span
-                            class="material-icons material-icons-outlined">remove_circle_outlined</span>REMOVER</button>
+                            class="material-icons-outlined">remove_circle_outlined</span>REMOVER</button>
                 </div> -->
             </div>
             <div class="card">
                 <div class="profile_photo">
-                    <span class="material-icons material-icons-outlined md-48">account_circle</span>
+                    <span class="material-icons-outlined md-48">account_circle</span>
                 </div>
 
                 <div class="user_description">
@@ -74,58 +74,58 @@
                 </div>
 
                 <div class="toggle_btn">
-                    <span class="material-icons material-icons-outlined">cancel</span>
+                    <span class="material-icons-outlined">cancel</span>
                 </div>
 
                 <div class="options">
-                    <button class="see_docs overline"><span class="material-icons material-icons-outlined">description</span> VER
+                    <button class="see_docs overline"><span class="material-icons-outlined">description</span> VER
                         DOCUMENTOS <span class="material-icons ">arrow_drop_down</span></button>
-                    <button class="upload_docs overline"><span
-                            class="material-icons material-icons-outlined">file_upload</span>UPLOAD DOCUMENTOS</button>
+                    <button class="upload_docs overline" id="showDoc"><span
+                            class="material-icons-outlined">file_upload</span>UPLOAD DOCUMENTOS</button>
                     <button class="edit overline"><span class="material-icons">edit</span>EDITAR DADOS</button>
                     <button class="delete overline"><span
-                            class="material-icons material-icons-outlined">remove_circle_outlined</span>REMOVER</button>
+                            class="material-icons-outlined">remove_circle_outlined</span>REMOVER</button>
                 </div>
             </div>
         </section>
 
         <div class="footer">
-            <button class="create button" id="show" onclick="showModal()">
+            <button class="create button" id="show">
                 <span class="material-icons-outlined ">add_circle</span>
-                <p class="new">CRIAR NOVO</p>
+                <p class="new button">CRIAR NOVO</p>
             </button>
         </div>
 
         <!-- Modal cadastro novo utente -->
-        <!-- <div id="modal_cadastro" class="modal_container">
-            <div class="modal">
+        <div id="modal_cadastro" class="modal_container">
+            <div class="modal_insert">
                 <div class="modal_columns">
 
-                    <div class="form_cadastro_left">
-                        <form action="" class="cadastro-left">
-                            <div class="header_left">
-                                <h4>Criar Novo Utente</h4>
+                    <div class="form_edit_left">
+                        <form action="" class="edit-left">
+                            <div class="header_left h4">
+                                <h4 class="h4">Criar Novo Utente</h4>
                             </div>
 
-                            <div class="name">
+                            <div class="name body1">
                                 <p>Nome</p>
-                                <input type="text" placeholder="Indique seu nome">
+                                <input class="body2" type="text" placeholder="Indique seu nome">
                             </div>
 
-                            <div class="gender">
+                            <div class="gender body1">
                                 <p>Gênero</p>
-                                <select name="gender_value" id="gender">
-                                    <option value="indique o gênero" selected> Indique o gênero</option>
-                                    <option value="masculino">Masculino</option>
-                                    <option value="feminino">Feminino</option>
-                                    <option value="not">Não informado</option>
+                                <select class="body2" name="gender_value" id="gender">
+                                    <option class="body2" value="indique o gênero" selected> Indique o gênero</option>
+                                    <option class="body2" value="masculino">Masculino</option>
+                                    <option class="body2" value="feminino">Feminino</option>
+                                    <option class="body2" value="not">Não informado</option>
                                 </select>
                             </div>
 
-                            <div class="birthday">
+                            <div class="birthday body1">
                                 <p>Data de Nascimento</p>
                                 <div class="selection">
-                                    <select name="day_value" id="birthday">
+                                    <select class="body2" name="day_value" id="birthday">
                                         <option value="dai" selected> Dia</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -193,129 +193,129 @@
                                 </div>
                             </div>
 
-                            <div class="identify">
-                                <div class="docs_id">
+                            <div class="identify body1">
+                                <div class="docs_id body2">
                                     <p>Nº CC/BI </p>
-                                    <input type="text" placeholder="Indique o CC ou BI">
+                                    <input class="docs_id body2" type="text" placeholder="Indique o CC ou BI">
                                 </div>
-                                <div class="docs_id">
+                                <div class="docs_id body2">
                                     <p>NIF </p>
-                                    <input type="text" placeholder="Indique o NIF">
+                                    <input class="body2" type="text" placeholder="Indique o NIF">
                                 </div>
                             </div>
 
-                            <div class="email">
+                            <div class="email body1">
                                 <p>E-mail</p>
-                                <input type="text" placeholder="Indique o e-mail">
+                                <input class="body2"type="text" placeholder="Indique o e-mail">
                             </div>
 
-                            <div class="phone">
+                            <div class="phone body1">
                                 <p>Telemóvel</p>
-                                <input type="text" placeholder="Indique o número de telemovel">
+                                <input class="body2" type="text" placeholder="Indique o número de telemovel">
                             </div>
                         </form>
                     </div>
 
-                    <div class="form_cadastro_right">
-                        <form action="" class="cadastro-right">
-                            <div class="header_rigth">
-                                <button class="close" id="close" onclick="closeModal()"><span class="material-icons-outlined">cancel</span></button>
+                    <div class="form_edit_right">
+                        <form action="" class="edit-right">
+                            <div class="header_rigth h4">
+                                <button class="close" id="close"><span class="material-icons-outlined">cancel</span></button>
                             </div>
-                            <div class="country">
+                            <div class="country body1">
                                 <p>País</p>
-                                <select name="country_value" id="country">
-                                    <option value="indique o pais" selected> Indique o país</option>
-                                    <option value="Portugal">Portugal</option>
-                                    <option value="França">França</option>
-                                    <option value="Alemanha">Alemanha</option>
+                                <select class="body2" name="country_value" id="country">
+                                    <option class="body2" alue="indique o pais" selected> Indique o país</option>
+                                    <option class="body2" value="Portugal">Portugal</option>
+                                    <option class="body2" value="França">França</option>
+                                    <option class="body2" value="Alemanha">Alemanha</option>
                                 </select>
                             </div>
 
-                            <div class="district">
+                            <div class="district body1">
                                 <p>Distrito</p>
-                                <select name="district_value" id="district">
-                                    <option value="indique o distrito" selected> Indique o Distrito</option>
-                                    <option value="Lisboa">Lisboa</option>
-                                    <option value="Porto">Porto</option>
-                                    <option value="Faro">Faro</option>
+                                <select class="body2" name="district_value" id="district">
+                                    <option class="body2" value="indique o distrito" selected> Indique o Distrito</option>
+                                    <option class="body2" value="Lisboa">Lisboa</option>
+                                    <option class="body2" value="Porto">Porto</option>
+                                    <option class="body2" value="Faro">Faro</option>
                                 </select>
                             </div>
 
-                            <div class="address">
+                            <div class="address body1">
                                 <p>Morada</p>
-                                <input type="text" placeholder="Indique a morada">
+                                <input class="body2" type="text" placeholder="Indique a morada">
                             </div>
 
-                            <div class="zip_code">
+                            <div class="zip_code body1">
                                 <p>Código Postal</p>
-                                <div class="zip_code_fields">
-                                    <input class="field_1" type="text" placeholder="xxxx">
-                                    <input class="field_2" type="text" placeholder="xxx">
-                                    <input class="location" type="text" placeholder="Localidade">
+                                <div class="zip_code_fields body2">
+                                    <input class="field_1 body2" type="text" placeholder="xxxx">
+                                    <input class="field_2 body2" type="text" placeholder="xxx">
+                                    <input class="location body2" type="text" placeholder="Localidade">
                                 </div>
                             </div>
 
-                            <div class="professional">
+                            <div class="professional body1">
                                 <p>Profissional</p>
-                                <select name="pro_value" id="professional">
-                                    <option value="Selecione o Profissional" selected>Selecione o Profissional</option>
-                                    <option value="Doutor 1">Doutor 1</option>
-                                    <option value="Doutor 2">Doutor 2</option>
-                                    <option value="Doutor 3">Doutor 3</option>
+                                <select class="body2" name="pro_value" id="professional">
+                                    <option class="body2" value="Selecione o Profissional" selected>Selecione o Profissional</option>
+                                    <option class="body2" value="Doutor 1">Doutor 1</option>
+                                    <option class="body2" value="Doutor 2">Doutor 2</option>
+                                    <option class="body2" value="Doutor 3">Doutor 3</option>
                                 </select>
                             </div>
 
-                            <div class="btn_form">
-                                <button class="create_new">CRIAR NOVO</button>
-                                <button class="cancel">CANCELAR</button>
+                            <div class="btn_form button">
+                                <button class="submit_form button">SUBMETER</button>
+                                <button class="cancel button">CANCELAR</button>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
 
         <!-- Modal inserção novos documentos -->
-        <!-- <div id="modal_documents" class="modal_container_documents">
-            <div class="modal">
+        <div id="modal_documents" class="documents_container">
+            <div class="modal_docs">
                 <div class="modal_columns">
 
                     <div class="form_documents_left">
                         <form action="" class="documents-left">
                             <div class="header_left">
-                                <h4>Carregar Documentos</h4>
+                                <h4 class="h4">Carregar Documentos</h4>
                             </div>
-                            <div class="container">
+                            <div class="container scroll_docs">
                                 <div class="list">
-                                    <p>Listar documentos</p>
+                                    <p class="body1">Listar documentos</p>
                                 </div>
                                 <div class="doc-options">
                                     <div class="doc-type">
-                                        <input type="text" name="doc-type" placeholder="nome-original-do-documento">
+                                        <input class="body2" type="text" name="doc-type" placeholder="nome-original-do-documento">
                                     </div>
                                     <div class="dropdown">
-                                        <button type="button" class="btn-dropdown-toggle" data-toggle="dropdown">
+                                        <button type="button" class="btn-dropdown-toggle overline" data-toggle="dropdown">
                                             <span class="material-icons-outlined">arrow_drop_down</span>
                                             SELECIONE O TIPO DE DOCUMENTO
                                         </button>
                                         <div class="dropdown-menu">
-                                            <div class="check">
+                                            <div class="check overline">
                                                 <input type="radio" class="check-input pos" value="report">
                                                 <label class="check-label">RELATÓRIO</label>
                                             </div>
-                                            <div class="check">
+                                            <div class="check overline">
                                                 <input type="radio" class="check-input pos" value="exam">
                                                 <label class="check-label">EXAME</label>
                                             </div>
-                                            <div class="check">
+                                            <div class="check overline">
                                                 <input type="radio" class="check-input pos" value="video">
                                                 <label class="check-label">VÍDEO</label>
                                             </div>
-                                            <div class="check">
+                                            <div class="check overline">
                                                 <input type="radio" class="check-input pos" value="imagem">
                                                 <label class="check-label">IMAGEM</label>
                                             </div>
-                                            <div class="check">
+                                            <div class="check overline">
                                                 <input type="radio" class="check-input pos" value="prescription">
                                                 <label class="check-label">RECEITA</label>
                                             </div>
@@ -327,7 +327,7 @@
                                 </div>
                                 <div class="document">
                                     <div class="doc-include">
-                                        <input type="text" name="doc-type" placeholder="Nome do documento">
+                                        <input class="sub2" type="text" name="doc-type" placeholder="Nome do documento">
                                         <button type="button" class="btn-dropdown-toggle2" data-toggle="dropdown">
                                             <span class="material-icons-outlined">arrow_drop_down</span>
                                             <span class="material-icons play_circle">play_circle</span>
@@ -339,15 +339,15 @@
                                     </div>
                                 </div>
                                 <div class="document">
-                                    <div class="doc-include2">
-                                        <input type="text" name="doc-type" placeholder="Nome do documento">
-                                        <button type="button" class="btn-dropdown-toggle3" data-toggle="dropdown">
+                                    <div class="doc-include">
+                                        <input class="sub2" type="text" name="doc-type" placeholder="Nome do documento">
+                                        <button type="button" class="btn-dropdown-toggle2" data-toggle="dropdown">
                                             <span class="material-icons-outlined">arrow_drop_down</span>
-                                            <span class="material-icons play_circle">content_paste</span>
-                                            EXAME
+                                            <span class="material-icons play_circle">play_circle</span>
+                                            VÍDEO
                                         </button>
                                     </div>
-                                    <div class="doc-exclude report">
+                                    <div class="doc-exclude video">
                                         <span class="material-icons-outlined">remove_circle_outline</span>
                                     </div>
                                 </div>
@@ -358,25 +358,25 @@
                     <div class="form_documents_right">
                         <form action="" class="documents-right">
                             <div class="header_rigth">
-                                <span class="material-icons-outlined">cancel</span>
+                                <span class="material-icons-outlined closeDoc" >cancel</span>
                             </div>
 
-                            <div class="up-docs">
+                            <div class="up-docs body2">
                                 <p>Carregue documentos ou arraste para esta área</p>
-                                <button class="upl-docs"><span
+                                <button class="upl-docs button"><span
                                         class="material-icons-outlined">file_upload</span>CARREGAR</button>
                             </div>
 
 
                             <div class="btn_form">
-                                <button class="submit">SUBMETER</button>
-                                <button class="cancel">CANCELAR</button>
+                                <button class="submit_doc button">SUBMETER</button>
+                                <button class="cancel_doc button">CANCELAR</button>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
 
     </div>
 
