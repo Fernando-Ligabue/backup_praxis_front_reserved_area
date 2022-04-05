@@ -1,7 +1,7 @@
 @media only screen and (max-width: 1201px) {
     .results{
         width: 100%;
-        height: 600px;
+        height: 380px;
         overflow-y: scroll;
     }
     
@@ -9,7 +9,17 @@
 
 
 @media only screen and (max-width: 1200px) {
+    .results{
+        width: 100%;
+        height: 380px;
+        overflow-y: scroll;
+    }
+    
     .card{
+        margin: 10px 0;
+        max-width: 100%;
+    }
+    .card_utentes{
         margin: 10px 0;
         max-width: 100%;
     }
@@ -69,27 +79,87 @@
         letter-spacing: 0.5px;
 }
 
-    .results{
-        height: 480px;
-    }
-
 }
 
 @media only screen and (max-width: 992px) {
     .results{
-        height: 350px;
+        height: 280px;
     }
 
 }
 
 @media only screen and (max-width: 768px) {
+    .main-logo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20%;
+    }
+    .main-logo img{
+        width: 100px;
+        height: 160px;
+    }
+    
+    .login{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20%;
+    }
+    .results{
+        width: 100%;
+        height: 280px;
+        overflow-y: scroll;
+    }
     
 }
 
-@media only screen and (max-width: 600px) {
-    
-}
 
 @media only screen and (max-width: 600px) {
+    .logo-sup{
+        display: none;
+    }
+
+    .tabs{
+        max-width: 400px;
+    }
+
+    .divider{
+        width: 100%;
+    }
+
+    .reports_tab, .reports_tab a, .reports_tab a:visited {
+        width: 155px;
+    }
+
+    .button {
+        font-family: 'Cabin', sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 1.25px;
+        text-align: center;
+    }
+
+    .help_title{
+        margin: 10px 0;
+    }
     
+    .results{
+        height:50vh;
+    }
+    .card_utentes{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+        width: 100%;
+        max-width: 90%;
+        margin: 10px 0 10px 5%;
+        height: 95px;
+        background: linear-gradient(270deg, var(--clear) 0%, var(--midBrow) 100%);
+        border-radius: 10px;
+}
 }

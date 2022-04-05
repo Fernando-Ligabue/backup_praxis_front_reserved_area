@@ -37,7 +37,7 @@
         </div>
 
         <section class="results">
-            <div class="card">
+            <!-- <div class="card">
                 <div class="profile_photo">
                     <span class="material-icons material-icons-outlined md-48">account_circle</span>
                 </div>
@@ -52,7 +52,7 @@
                     <span class="material-icons material-icons-outlined">expand_circle_down</span>
                 </div>
 
-            </div>
+            </div> -->
             <div class="card">
                 <div class="profile_photo">
                     <span class="material-icons material-icons-outlined md-48">account_circle</span>
@@ -65,10 +65,10 @@
                 </div>
 
                 <div class="toggle_btn">
-                    <span class="material-icons material-icons-outlined">cancel</span>
+                    <span id="toggle_pro" class="material-icons material-icons-outlined">cancel</span>
                 </div>
 
-                <div class="options">
+                <div id="pro_opt" class="options">
                     <button class="edit edit_dados overline"><span class="material-icons material-icons-outlined">edit</span> EDITAR DADOS </button>
                     <button class="see_utentes overline"><span
                             class="material-icons-outlined">account_circle_outlined</span>VER UTENTES</button>
@@ -79,42 +79,42 @@
         </section>
 
         <div class="footer">
-            <button class="create" id="show" onclick="showModal()">
+            <button class="create" id="show">
                 <span class="material-icons-outlined ">add_circle</span>
                 <p class="new">CRIAR NOVO</p>
             </button>
         </div>
 
         <!-- Modal cadastro novo profissional -->
-        <!-- <div id="modal_cadastro" class="modal_container">
-            <div class="modal">
+        <div id="modal_cadastro" class="modal_container">
+            <div class="modal_insert">
                 <div class="modal_columns">
 
-                    <div class="form_cadastro_left">
-                        <form action="" class="cadastro-left">
-                            <div class="header_left">
-                                <h4>Criar Novo Profissional</h4>
+                    <div class="form_edit_left">
+                        <form action="" class="edit-left">
+                            <div class="header_left h4">
+                                <h4 class="h4">Criar Novo Profissional</h4>
                             </div>
 
-                            <div class="name">
+                            <div class="name body1">
                                 <p>Nome</p>
-                                <input type="text" placeholder="Indique o nome">
+                                <input class="body2" type="text" placeholder="Indique o nome">
                             </div>
 
-                            <div class="gender">
+                            <div class="gender body1">
                                 <p>Gênero</p>
-                                <select name="gender_value" id="gender">
-                                    <option value="indique o gênero" selected> Indique o gênero</option>
-                                    <option value="masculino">Masculino</option>
-                                    <option value="feminino">Feminino</option>
-                                    <option value="not">Não informado</option>
+                                <select class="body2" name="gender_value" id="gender">
+                                    <option class="body2" value="indique o gênero" selected> Indique o gênero</option>
+                                    <option class="body2" value="masculino">Masculino</option>
+                                    <option class="body2" value="feminino">Feminino</option>
+                                    <option class="body2" value="not">Não informado</option>
                                 </select>
                             </div>
 
-                            <div class="birthday">
+                            <div class="birthday body1">
                                 <p>Data de Nascimento</p>
                                 <div class="selection">
-                                    <select name="day_value" id="birthday">
+                                    <select class="body2" name="day_value" id="birthday">
                                         <option value="dai" selected> Dia</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -182,80 +182,79 @@
                                 </div>
                             </div>
 
-                            <div class="identify">
-                                <div class="docs_id">
+                            <div class="identify body1">
+                                <div class="docs_id body2">
                                     <p>Nº CC/BI </p>
-                                    <input type="text" placeholder="Indique o CC ou BI">
+                                    <input class="docs_id body2" type="text" placeholder="Indique o CC ou BI">
                                 </div>
-                                <div class="docs_id">
+                                <div class="docs_id body2">
                                     <p>NIF </p>
-                                    <input type="text" placeholder="Indique o NIF">
+                                    <input class="body2" type="text" placeholder="Indique o NIF">
                                 </div>
                             </div>
 
-                            <div class="email">
+                            <div class="email body1">
                                 <p>E-mail</p>
-                                <input type="text" placeholder="Indique o e-mail">
+                                <input class="body2"type="text" placeholder="Indique o e-mail">
                             </div>
 
-                            <div class="phone">
+                            <div class="phone body1">
                                 <p>Telemóvel</p>
-                                <input type="text" placeholder="Indique o número de telemovel">
+                                <input class="body2" type="text" placeholder="Indique o número de telemovel">
                             </div>
                         </form>
                     </div>
 
-                    <div class="form_cadastro_right">
-                        <form action="" class="cadastro-right">
-                            <div class="header_rigth">
-                                <button class="close" id="close" onclick="closeModal()"><span class="material-icons-outlined">cancel</span></button>
+                    <div class="form_edit_right">
+                        <form action="" class="edit-right">
+                            <div class="header_rigth h4">
+                                <button class="close" id="close"><span class="material-icons-outlined">cancel</span></button>
                             </div>
-                            <div class="country">
+                            <div class="country body1">
                                 <p>País</p>
-                                <select name="country_value" id="country">
-                                    <option value="indique o pais" selected> Indique o país</option>
-                                    <option value="Portugal">Portugal</option>
-                                    <option value="França">França</option>
-                                    <option value="Alemanha">Alemanha</option>
+                                <select class="body2" name="country_value" id="country">
+                                    <option class="body2" alue="indique o pais" selected> Indique o país</option>
+                                    <option class="body2" value="Portugal">Portugal</option>
+                                    <option class="body2" value="França">França</option>
+                                    <option class="body2" value="Alemanha">Alemanha</option>
                                 </select>
                             </div>
 
-                            <div class="district">
+                            <div class="district body1">
                                 <p>Distrito</p>
-                                <select name="district_value" id="district">
-                                    <option value="indique o distrito" selected> Indique o Distrito</option>
-                                    <option value="Lisboa">Lisboa</option>
-                                    <option value="Porto">Porto</option>
-                                    <option value="Faro">Faro</option>
+                                <select class="body2" name="district_value" id="district">
+                                    <option class="body2" value="indique o distrito" selected> Indique o Distrito</option>
+                                    <option class="body2" value="Lisboa">Lisboa</option>
+                                    <option class="body2" value="Porto">Porto</option>
+                                    <option class="body2" value="Faro">Faro</option>
                                 </select>
                             </div>
 
-                            <div class="address">
+                            <div class="address body1">
                                 <p>Morada</p>
-                                <input type="text" placeholder="Indique a morada">
+                                <input class="body2" type="text" placeholder="Indique a morada">
                             </div>
 
-                            <div class="zip_code">
+                            <div class="zip_code body1">
                                 <p>Código Postal</p>
-                                <div class="zip_code_fields">
-                                    <input class="field_1" type="text" placeholder="xxxx">
-                                    <input class="field_2" type="text" placeholder="xxx">
-                                    <input class="location" type="text" placeholder="Localidade">
+                                <div class="zip_code_fields body2">
+                                    <input class="field_1 body2" type="text" placeholder="xxxx">
+                                    <input class="field_2 body2" type="text" placeholder="xxx">
+                                    <input class="location body2" type="text" placeholder="Localidade">
                                 </div>
                             </div>
 
-                            <div class="btn_form">
-                                <button class="create_new">CRIAR NOVO</button>
-                                <button class="cancel">CANCELAR</button>
+                            <div class="btn_form button">
+                                <button class="submit_form button">SUBMETER</button>
+                                <button class="cancel button">CANCELAR</button>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
-    </div> -->
 
-    <script src="../js/global.js"></script>
+    <script src="../js/panel_pros.js"></script>
 </body>
 
 </html>

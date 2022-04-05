@@ -23,11 +23,14 @@
 
         <div class="tab-bar">
             <ul class="users">
-                <li class="tab_first"><span class="material-icons material-icons-outlined ">account_circle_outlined</span>
+                <li class="tab_first"><span
+                        class="material-icons material-icons-outlined ">account_circle_outlined</span>
                     <p class="first button">UTENTES</p>
                 </li>
-                <li class="tab_second"><a href="admin_panel_professional.html"><span class="material-icons material-icons-outlined ">badge_outlined</span>
-                    <p class="second button">MÉDICOS</p></a>
+                <li class="tab_second"><a href="admin_panel_professional.html"><span
+                            class="material-icons material-icons-outlined ">badge_outlined</span>
+                        <p class="second button">MÉDICOS</p>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -73,11 +76,11 @@
                     <div class="birth_date overline">20 DE MARÇO DE 1968 </div>
                 </div>
 
-                <div class="toggle_btn">
-                    <span class="material-icons-outlined">cancel</span>
+                <div id="toggle_btn" class="toggle_btn">
+                    <span class="material-icons-outlined">expand_circle_down</span>
                 </div>
 
-                <div class="options">
+                <div id="options" class="options">
                     <button class="see_docs overline"><span class="material-icons-outlined">description</span> VER
                         DOCUMENTOS <span class="material-icons ">arrow_drop_down</span></button>
                     <button class="upload_docs overline" id="showDoc"><span
@@ -109,7 +112,7 @@
 
                             <div class="name body1">
                                 <p>Nome</p>
-                                <input class="body2" type="text" placeholder="Indique seu nome">
+                                <input class="body2" type="text" placeholder="Indique o nome">
                             </div>
 
                             <div class="gender body1">
@@ -206,7 +209,7 @@
 
                             <div class="email body1">
                                 <p>E-mail</p>
-                                <input class="body2"type="text" placeholder="Indique o e-mail">
+                                <input class="body2" type="text" placeholder="Indique o e-mail">
                             </div>
 
                             <div class="phone body1">
@@ -219,7 +222,8 @@
                     <div class="form_edit_right">
                         <form action="" class="edit-right">
                             <div class="header_rigth h4">
-                                <button class="close" id="close"><span class="material-icons-outlined">cancel</span></button>
+                                <button class="close" id="close"><span
+                                        class="material-icons-outlined">cancel</span></button>
                             </div>
                             <div class="country body1">
                                 <p>País</p>
@@ -234,7 +238,8 @@
                             <div class="district body1">
                                 <p>Distrito</p>
                                 <select class="body2" name="district_value" id="district">
-                                    <option class="body2" value="indique o distrito" selected> Indique o Distrito</option>
+                                    <option class="body2" value="indique o distrito" selected> Indique o Distrito
+                                    </option>
                                     <option class="body2" value="Lisboa">Lisboa</option>
                                     <option class="body2" value="Porto">Porto</option>
                                     <option class="body2" value="Faro">Faro</option>
@@ -258,7 +263,8 @@
                             <div class="professional body1">
                                 <p>Profissional</p>
                                 <select class="body2" name="pro_value" id="professional">
-                                    <option class="body2" value="Selecione o Profissional" selected>Selecione o Profissional</option>
+                                    <option class="body2" value="Selecione o Profissional" selected>Selecione o
+                                        Profissional</option>
                                     <option class="body2" value="Doutor 1">Doutor 1</option>
                                     <option class="body2" value="Doutor 2">Doutor 2</option>
                                     <option class="body2" value="Doutor 3">Doutor 3</option>
@@ -291,10 +297,12 @@
                                 </div>
                                 <div class="doc-options">
                                     <div class="doc-type">
-                                        <input class="body2" type="text" name="doc-type" placeholder="nome-original-do-documento">
+                                        <input class="body2" type="text" name="doc-type"
+                                            placeholder="nome-original-do-documento">
                                     </div>
                                     <div class="dropdown">
-                                        <button type="button" class="btn-dropdown-toggle overline" data-toggle="dropdown">
+                                        <button type="button" class="btn-dropdown-toggle overline"
+                                            data-toggle="dropdown">
                                             <span class="material-icons-outlined">arrow_drop_down</span>
                                             SELECIONE O TIPO DE DOCUMENTO
                                         </button>
@@ -358,7 +366,7 @@
                     <div class="form_documents_right">
                         <form action="" class="documents-right">
                             <div class="header_rigth">
-                                <span class="material-icons-outlined closeDoc" >cancel</span>
+                                <span class="material-icons-outlined closeDoc">cancel</span>
                             </div>
 
                             <div class="up-docs body2">
@@ -367,6 +375,9 @@
                                         class="material-icons-outlined">file_upload</span>CARREGAR</button>
                             </div>
 
+                            <div id="uploaded-files">
+                                
+                            </div>
 
                             <div class="btn_form">
                                 <button class="submit_doc button">SUBMETER</button>
@@ -380,7 +391,45 @@
 
     </div>
 
-    <script src="../js/global.js"></script>
+    <script src="../js/panel_utentes.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $('.up-docs').on('dragover', function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+            $(this).addClass('up-docs-hover');
+        });
+        $('.up-docs').on('dragleave', function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+            $(this).removeClass('up-docs-hover');
+        });
+        $('.up-docs').on('drop', function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+            $(this).removeClass('up-docs-hover');
+            var data = new FormData();
+            var files = event.originalEvent.dataTransfer.files;
+            for( var i = 0; i<files.length; i++){
+                data.append('file[]', files[i]);
+            }
+            $.ajax({
+                url: '../php_files/upload.php',
+                method: 'POST',
+                data: data,
+                contentType: false,
+                cache: false,
+                processData: false,
+                success: function(result){
+                    $('#uploaded-files').html(result);
+                }
+            });
+        });
+    </script>
+
 </body>
 
 </html>
