@@ -24,7 +24,7 @@
         <div class="tab-bar">
             <div class="back_to button">
                 <a class="return" href="prof_lista_utentes.html" rel="noopener noreferrer">
-                    <p class="back button"><span class="material-icons">arrow_back_ios</span>LISTA DE UTENTES</p>
+                    <p class="back button link"><span class="material-icons">arrow_back_ios</span>LISTA DE UTENTES</p>
                 </a>
             </div>
 
@@ -52,14 +52,20 @@
                 <div class="birth_date overline">20 DE MARÇO DE 1968 </div>
             </div>
 
-            <div class="toggle_btn">
+            <!-- <div class="toggle_btn">
                 <span class="material-icons-outlined">expand_circle_down</span>
-            </div>
+            </div> -->
 
             <div class="options">
-                <button class="see_docs overline"><span
-                        class="material-icons material-icons-outlined">description</span> VER
-                    DOCUMENTOS <span class="material-icons ">arrow_drop_down</span></button>
+                <div class="dropdown-doc">
+                    <button class="see_docs overline"><span class="material-icons-outlined">description</span> VER
+                        DOCUMENTOS <span class="material-icons ">arrow_drop_down</span></button>
+                    <div class="dropdown-doc-content">
+                    <a class="drop-opt overline" href="#">RELATÓRIOS</a>
+                    <a class="drop-opt overline" href="#">RECEITAS</a>
+                    <a class="drop-opt overline" href="#">EXAMES</a>
+                    </div>
+                  </div>
                 <button class="upload_docs overline"><span class="material-icons-outlined">file_upload</span>UPLOAD
                     DOCUMENTOS</button>
             </div>

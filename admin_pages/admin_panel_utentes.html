@@ -40,7 +40,7 @@
         </div>
 
         <section class="results">
-            <div class="card">
+            <div class="card card-utente">
                 <div class="profile_photo">
                     <span class="material-icons-outlined">account_circle</span>
                 </div>
@@ -51,21 +51,62 @@
                     <div class="birth_date overline">20 DE MARÇO DE 1968 </div>
                 </div>
 
-                <div class="toggle_btn">
-                    <span class="material-icons-outlined">expand_circle_down</span>
-                </div>
+                <!-- <div class="toggle_btn">
+                    <span class="material-icons-outlined">cancel</span>
+                </div> -->
 
-                <!-- <div class="options">
-                    <button class="see_docs overline"><span class="material-icons-outlined">description</span> VER
-                        DOCUMENTOS <span class="material-icons ">arrow_drop_down</span></button>
+                <div class="options">
+                    <div class="dropdown-doc">
+                        <button class="see_docs overline"><span class="material-icons-outlined">description</span> VER
+                            DOCUMENTOS <span class="material-icons ">arrow_drop_down</span></button>
+                        <div class="dropdown-doc-content">
+                        <a class="drop-opt overline" href="#">Relatórios</a>
+                        <a class="drop-opt overline" href="#">Receitas</a>
+                        <a class="drop-opt overline" href="#">Exames</a>
+                        </div>
+                      </div>
                     <button class="upload_docs overline"><span
-                            class="material-icons-outlined">file_upload</span>UPLOAD DOCUMENTOS</button>
+                            class="material-icons material-icons-outlined">file_upload</span>UPLOAD DOCUMENTOS</button>
                     <button class="edit overline"><span class="material-icons">edit</span>EDITAR DADOS</button>
                     <button class="delete overline"><span
-                            class="material-icons-outlined">remove_circle_outlined</span>REMOVER</button>
-                </div> -->
+                            class="material-icons material-icons-outlined">remove_circle_outlined</span>REMOVER</button>
+                </div>
             </div>
-            <div class="card">
+
+            <div class="card card-utente">
+                <div class="profile_photo">
+                    <span class="material-icons-outlined">account_circle</span>
+                </div>
+
+                <div class="user_description">
+                    <div class="username sub1">Nome do utente</div>
+                    <div class="userId body2">321321321</div>
+                    <div class="birth_date overline">20 DE MARÇO DE 1968 </div>
+                </div>
+
+                <!-- <div class="toggle_btn">
+                    <span class="material-icons-outlined">cancel</span>
+                </div> -->
+
+                <div class="options">
+                    <div class="dropdown-doc">
+                        <button class="see_docs overline"><span class="material-icons-outlined">description</span> VER
+                            DOCUMENTOS <span class="material-icons ">arrow_drop_down</span></button>
+                        <div class="dropdown-doc-content">
+                        <a class="drop-opt overline" href="#">Relatórios</a>
+                        <a class="drop-opt overline" href="#">Receitas</a>
+                        <a class="drop-opt overline" href="#">Exames</a>
+                        </div>
+                      </div>
+                    <button class="upload_docs overline"><span
+                            class="material-icons material-icons-outlined">file_upload</span>UPLOAD DOCUMENTOS</button>
+                    <button class="edit overline"><span class="material-icons">edit</span>EDITAR DADOS</button>
+                    <button class="delete overline"><span
+                            class="material-icons material-icons-outlined">remove_circle_outlined</span>REMOVER</button>
+                </div>
+            </div>
+            <!-- <div class="card">
+
                 <div class="profile_photo">
                     <span class="material-icons-outlined md-48">account_circle</span>
                 </div>
@@ -80,16 +121,23 @@
                     <span class="material-icons-outlined">expand_circle_down</span>
                 </div>
 
-                <div id="options" class="options">
-                    <button class="see_docs overline"><span class="material-icons-outlined">description</span> VER
-                        DOCUMENTOS <span class="material-icons ">arrow_drop_down</span></button>
+                <div id="options" class="options_panel">
+                    <div class="dropdown-doc">
+                        <button class="see_docs overline"><span class="material-icons-outlined">description</span> VER
+                            DOCUMENTOS <span class="material-icons ">arrow_drop_down</span></button>
+                        <div class="dropdown-doc-content">
+                        <a class="drop-opt overline" href="#">Relatórios</a>
+                        <a class="drop-opt overline" href="#">Receitas</a>
+                        <a class="drop-opt overline" href="#">Exames</a>
+                        </div>
+                      </div>
                     <button class="upload_docs overline" id="showDoc"><span
                             class="material-icons-outlined">file_upload</span>UPLOAD DOCUMENTOS</button>
                     <button class="edit overline"><span class="material-icons">edit</span>EDITAR DADOS</button>
                     <button class="delete overline"><span
                             class="material-icons-outlined">remove_circle_outlined</span>REMOVER</button>
                 </div>
-            </div>
+            </div> -->
         </section>
 
         <div class="footer">
@@ -397,6 +445,14 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script>
+        // $(document).on("click", ".toggle_btn", function (e) {
+        //     e.preventDefault();
+        //     e.stopPropagation();
+        //     console.log(this);
+        //     $("div.options").addClass("selected").toggle();
+        //     console.log(e.currentTarget);
+        // });
+
         $('.up-docs').on('dragover', function (event) {
             event.preventDefault();
             event.stopPropagation();

@@ -95,6 +95,7 @@ border-radius: 5px;
     display: flex;
     justify-content: end;
     width: 100%;
+    max-width: 1366px;
     height: 90px;
 }
 .logo-sup > img {
@@ -110,6 +111,7 @@ border-radius: 5px;
     justify-content: center;
     align-items: center;
     width: 100%;
+    max-width: 1366px;
     height: 50px;
 }
 
@@ -198,6 +200,7 @@ border-radius: 5px;
     align-items: center;
     background-color: var(--darkGray);
     width: 100%;
+    max-width: 1366px;
     height: 60px;
     top: 141px;
 }
@@ -213,16 +216,18 @@ border-radius: 5px;
     margin: 0 5px;
 }
 
-/* Section cards con infos utentes */
+/* Section cards com infos utentes */
 .results{
     width: 100%;
+    max-width: 1366px;
     height: 400px;
     overflow-y: scroll;
 }
 
 .results::-webkit-scrollbar {
-    width: 25px;
+    width: 10px;
     background-color: var(--lightGray);
+    height: 10px;
 }
 
 .results::-webkit-scrollbar-thumb {
@@ -236,8 +241,7 @@ border-radius: 5px;
     align-items: center;
     padding: 10px;
     width: 100%;
-    max-width: 95%;
-    margin: 10px 0 10px 5%;
+    margin: 10px 2rem;
     height: 95px;
     background: linear-gradient(270deg, var(--clear) 0%, var(--midBrow) 100%);
     border-radius: 10px;
@@ -247,7 +251,7 @@ border-radius: 5px;
     background-color: transparent;
     width: 60px;
     height: 60px;
-    margin: 10px 50px 10px 15px;
+    margin: 10px;
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -316,14 +320,12 @@ border-radius: 5px;
     color: var(--darkGray);
     cursor: pointer;
 }
-
-.options{
+.options_panel{
     background-color: transparent;
-    display: none;
+    display: flex;
     align-items: flex-start;
     padding: 0px;
-    width: 100%;
-    max-width: 700px;
+    width: fit-content;
     height: 42px;
     flex: none;
     order: 3;
@@ -331,13 +333,64 @@ border-radius: 5px;
     margin: 0px 50px;
 }
 
+.options{
+    background-color: transparent;
+    display: flex;
+    align-items: flex-start;
+    padding: 0px;
+    width: 100%;
+    height: 42px;
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+    margin: 0px 50px;
+}
+
+.selected{
+    display: flex;
+}
+
+/* dropdown button */
+  .dropdown-doc {
+    background-color: transparent !important;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-doc-content {
+    background-color: transparent;
+    display: none;
+    position: absolute;
+    min-width: 199px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-doc-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 5px;
+  }
+
+  .drop-opt{
+      border: solid 1px var(--darkGray);
+      border-radius: 5px;
+  }
+  
+  .dropdown-doc-content a:hover {background-color: var(--clear)}
+  
+  .dropdown-doc:hover .dropdown-doc-content {
+    display: block;
+  }
+    /* end dropdown button */
 .card_utentes{
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 10px;
     width: 100%;
-    max-width: 95%;
     margin: 10px 0 10px 5%;
     height: 95px;
     background: linear-gradient(270deg, var(--clear) 0%, var(--midBrow) 100%);
@@ -351,7 +404,6 @@ border-radius: 5px;
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 400px;
     height: 42px;
     margin: 0px 50px;
 }
@@ -446,6 +498,7 @@ border-radius: 5px;
     background-color: var(--darkGray);
     position: fixed;
     width: 100%;
+    max-width: 1366px;
     height: 133px;
     bottom: 0;
 }
@@ -510,15 +563,16 @@ border-radius: 5px;
 
 /* Page lista de utentes alocados ao profissional */
 .back_to{
+    width: 250px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    position: absolute;
     top: 7.2rem;
-    left: 2rem;
-    bottom: 89.55%;
+    left: 0;
+    /* bottom: 89.55%; */
     border-radius: 5px;
+    /* position: absolute; */
 }
 
 .back{
@@ -535,6 +589,9 @@ border-radius: 5px;
 
 .return,
 .return:visited{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
 }
 
@@ -548,15 +605,18 @@ border-radius: 5px;
 .info_utente,
 .info_professional{
     width: 100%;
-    height: fit-content;
     margin: 0;
 }
 .card.card-utente,
 .card.card-pro{
     border-radius: 0px 10px;
     margin-top: 0;
+   
 }
 
+.link{
+    font-size: 12px;
+}
 .see_docs{
     display: flex;
     flex-direction: row;
@@ -610,7 +670,7 @@ border-radius: 5px;
     padding: 40px 60px;
     position: absolute;
     width: 970px;
-    height: 667px;
+    /* height: 667px; */
     background: var(--clear);
     border-radius: 15px;
 }
@@ -623,14 +683,13 @@ border-radius: 5px;
     padding: 40px 60px;
     position: absolute;
     width: 970px;
-    height: 667px;
+    /* height: 667px; */
     background: var(--clear);
     border-radius: 15px;
 }
 
 .edit_container{
     width: 100%;
-    max-width: 850px;
     margin: 20px 0px;
 }
 
@@ -640,7 +699,7 @@ border-radius: 5px;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 587px;
+    /* height: 587px; */
 }
 
 .modal_columns{
@@ -781,6 +840,9 @@ border-radius: 5px;
     width: 400px;
     height: 51px;
     color: var(--darkGray);
+}
+.header_rigth.h4.edit-page{
+    visibility: hidden;
 }
 
 .header_rigth > span{
@@ -990,8 +1052,9 @@ border-radius: 5px;
     overflow-y: scroll;
 }
 .video-grid::-webkit-scrollbar {
-    width: 25px;
+    width: 10px;
     background-color: var(--lightGray);
+    height: 10px;
 }
 .video-grid::-webkit-scrollbar-thumb {
     background-color: var(--darkGray);
@@ -1201,8 +1264,9 @@ border-radius: 5px;
 }
 
 .scroll_docs::-webkit-scrollbar {
-    width: 25px;
+    width: 10px;
     background-color: var(--lightGray);
+    height: 10px;
 }
 
 .scroll_docs::-webkit-scrollbar-thumb {

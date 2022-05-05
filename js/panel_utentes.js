@@ -35,17 +35,26 @@ window.onclick = function (event) {
 
 
 // toggle card options utentes
-var div = document.getElementById("options");
-var button_opt = document.getElementById("toggle_btn");
+// var div = document.getElementById("options");
+// var button_opt = document.getElementById("toggle_btn");
 
-button_opt.onclick = function () {
-    if (div.style.display == "none") {
-        div.style.display = "flex";
-    } else {
-        div.style.display = "none"
-    }
-}
+// button_opt.onclick = function () {
+//     if (div.style.display == "none") {
+//         div.style.display = "flex";
+//     } else {
+//         div.style.display = "none"
+//     }
+// }
 
+// testes
+// const div = document.querySelector(".options");
+// const btn = document.querySelectorAll('.toggle_btn');
 
+// btn.forEach((toggle_btn) =>
+//   toggle_btn.addEventListener('click', (div) => { 
+//     //   div.style.display == "none" ? div.style.display = "flex" : div.style.display = "none";
+//     // console.log(div.currentTarget)
+// })
+// );
 
 // Upload docs area
