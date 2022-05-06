@@ -26,6 +26,9 @@
     .options{
         width: fit-content;
     }
+    .menu-wrap {
+        visibility: hidden;
+    }
 }
 @media only screen and (max-width: 1200px) {
     .main-logo{
@@ -130,6 +133,9 @@
 .options{
     width: fit-content;
 }
+.menu-wrap {
+    visibility: hidden;
+}
 }
 
 @media only screen and (max-width: 1080px) {
@@ -153,6 +159,7 @@
     .card{
         margin: 10px 0;
         width: 100%;
+        height: fit-content;
     }
     .card-utente,
     .card-pro{
@@ -162,6 +169,14 @@
         justify-content: center;
     }
 
+    .card > .options > .upload_docs{
+        width: 199px;
+        margin: 2px 0;
+    }
+    .card > .options > .delete{
+        width: 199px;
+        margin: 2px 0;
+    }
     .card.card-utente >.options>.upload_docs,
     .card.card-utente >.options>.edit,
     .card.card-utente >.options>.delete{
@@ -185,6 +200,9 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(198px, 1fr));
     }
+    .menu-wrap {
+        visibility: hidden;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -207,6 +225,10 @@
         align-items: center;
         margin-top: 20px;
         margin-bottom: 20%;
+    }
+
+    .tab-bar-utentes{
+        display: none;
     }
     .results{
         width: 100%;
@@ -266,14 +288,19 @@
          width: 149px;
      }
  
-
     .options{
         width: fit-content;
+    }
+    .menu-wrap {
+        visibility: visible;
     }
 }
 
 
 @media only screen and (max-width: 600px) {
+    .results{
+        height: 450px;
+    }
     .tabs{
         max-width: 400px;
     }
@@ -371,5 +398,8 @@
 
     .reports, .prescription, .multimedia{
         flex-flow: column;
+    }
+    .menu-wrap {
+        visibility: visible;
     }
 }
