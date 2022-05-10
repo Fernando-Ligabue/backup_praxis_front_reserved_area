@@ -10,11 +10,31 @@
     .login{
         margin: 50px auto;
     }
-    .results{
-        width: 100%;
-        height: 350px;
-        overflow-y: scroll;
+    .back_to{
+        top: 6.8rem;
+        left: 15%;
+        background-color: transparent;
+        justify-content: flex-start;
     }
+
+    .results.results-admin{
+        height: calc(100vh - 334px);
+    }
+    .results.results-list{
+        height: calc(100vh - 261px);
+    }
+    .results.results-list-admin{
+        height: calc(100vh - 312px);
+    }
+    .results.results-options{
+        height: calc(100vh - 427px);
+    }
+    .results.results-options-utentes{
+        height: calc(100vh - 321px);
+    }
+
+
+
     .card_utente,
     .card-pro{
         margin: 10px 0;
@@ -42,11 +62,30 @@
     .login{
         margin-bottom: 10%;
     }
-    .results{
-        width: 100%;
-        height: 320px;
-        overflow-y: scroll;
+
+    .back_to{
+        top: 6.8rem;
+        left: 10%;
+        background-color: transparent;
+        justify-content: flex-start;
     }
+
+    .results.results-admin{
+        height: calc(100vh - 334px);
+    }
+    .results.results-list{
+        height: calc(100vh - 312px);
+    }
+    .results.results-list-admin{
+        height: calc(100vh - 260px);
+    }
+    .results.results-options{
+        height: calc(100vh - 311px);
+    }
+    .results.results-options-utentes{
+        height: calc(100vh - 311px);
+    }
+
     
     .card{
         margin: 10px 0;
@@ -139,22 +178,41 @@
 }
 
 @media only screen and (max-width: 1080px) {
-    .results{
-        height: 280px;
+    .back_to{
+        background-color: transparent;
+        top: 6.8rem;
+        left: 1rem;
     }
+
     .back_to > a{
         font-size: 12px;
     }
-        .modal_columns{
+    
+    .modal > .modal_columns{
         flex-flow: column;
     }
-    .link{
-        font-size: 12px;
+
+    .button.link > span{
+        background-color: transparent;
     }
 
     .h4{
         font-size: 24px;
     }
+
+    .results.results-admin{
+        height: calc(100vh - 334px);
+    }
+    .results.results-list{
+        height: calc(100vh - 312px);
+    }
+    .results.results-options{
+        height: calc(100vh - 201px);
+    }
+    .results.results-options-pro{
+        height: calc(100vh - 440px);
+    }
+
 
     .card{
         margin: 10px 0;
@@ -203,9 +261,59 @@
     .menu-wrap {
         visibility: hidden;
     }
+
+    /* Modal Insert utente, pro */
+
+    /* .modal-new >.form_edit_left,
+    .modal-new >.form_edit_right{
+        width: 300px;
+        height: fit-content;
+    }
+
+    .modal-new >.edit_left,
+    .modal-new >.edit_right{
+        width: 300px;
+    }
+    .modal-new >.name,.gender,.birthday,.identify,
+    .email,.phone,.country,.docs_id, 
+    .district,.address,.zip_code,.zip_code_fields,
+    .professional,.btn_form, .header_left, .header_left.h4, .h4 > h4, .h4.edit-mobile{
+        width: 300px;
+    }
+    .field_1, .field_2{
+        width: 75px;
+    }
+    .location{
+        width: 150px;
+    }
+    .docs_id > input{
+        width: 145px;
+    }
+    .name > input, .gender > select,
+    .email > input, .phone > input,
+    .country > select, .district > select,
+    .address > input, .professional > select{
+        width: 300px;
+    }
+
+    .submit_form, .cancel{
+        width: 145px;
+    }
+    .submit_form,.cancel{
+        padding: 15px 25px;
+    } */
+    /*  */
 }
 
 @media only screen and (max-width: 768px) {
+    .logo-sup{
+       height: 60px;
+    }
+    .logo-sup > img{
+        margin-top:0.5rem;
+        margin-right: 0.5rem;
+    }
+
     .main-logo{
         display: flex;
         flex-direction: column;
@@ -227,13 +335,19 @@
         margin-bottom: 20%;
     }
 
-    .tab-bar-utentes{
+    .back_to{
+        top: 1rem;
+        left: 3%;
+        background-color: transparent;
+        justify-content: flex-start;
+    }
+
+    .link-text{
         display: none;
     }
-    .results{
-        width: 100%;
-        height: 320px;
-        overflow-y: scroll;
+
+    .tab-bar-utentes{
+        display: none;
     }
 
     .modal_columns{
@@ -243,11 +357,30 @@
         display: none;
     }
         
-    .link{
-        font-size: 10px;
-    }
     .h4{
         font-size: 20px;
+    }
+
+    .results.results-admin{
+        height: calc(100vh - 304px);
+    }
+    .results.results-list-admin{
+        height: calc(100vh - 297px);
+    }
+    .results.results-options-admin{
+        height: calc(100vh - 514px);
+    }
+    .results.results-options{
+        height: calc(100vh - 171px);
+    }
+    .results.results-options-pro{
+        height: calc(100vh - 426px);
+    }
+    .results.results-options-utentes{
+        height: calc(100vh - 273px);
+    }
+    .results.results-list{
+        height: calc(100vh - 454px);
     }
 
     .card{
@@ -263,7 +396,6 @@
     }
     .card.card-utente >.options{
         display: block;
-        height: 168px;
         margin: 0.5rem auto;
     }
     .card.card-utente >.options>.upload_docs,
@@ -275,7 +407,6 @@
 
     .card.card-pro >.options{
         display: block;
-        height: 126px;
     }
 
     .card.card-pro >.options>.edit.edit_dados,
@@ -285,22 +416,30 @@
     }
     .card.card-pro > .options > .delete{
         margin: 0;
-         width: 149px;
-     }
- 
+        width: 149px;
+    }
+
     .options{
         width: fit-content;
     }
     .menu-wrap {
         visibility: visible;
     }
+
+        /* Modal Insert utente, pro */
+        /* .body1, .body2{
+            font-size: 12px;
+            height: fit-content;
+        }
+        .hide{
+            visibility: hidden;
+        } */
+        /*  */
+        
 }
 
 
 @media only screen and (max-width: 600px) {
-    .results{
-        height: 450px;
-    }
     .tabs{
         max-width: 400px;
     }
@@ -323,6 +462,31 @@
 
     .help_title{
         margin: 10px 0;
+    }
+
+    .results.results-admin{
+        height: calc(100vh - 303px);
+    }
+    .results.results-list-admin{
+        height: calc(100vh - 454px);
+    }
+    .results.results-list-pro{
+        height: calc(100vh - 465px);
+    }
+    .results.results-list{
+        height: calc(100vh - 448px);
+    }
+    .results.results-options{
+        height: calc(100vh - 698px);
+    }
+    .results.results-options-admin{
+        height: calc(100vh - 686px);
+    }
+    .results.results-options-utentes{
+        height: calc(100vh - 273px);
+    }
+    .results.results-list{
+        height: calc(100vh - 454px);
     }
     
     .card{
@@ -370,7 +534,7 @@
     .name,.gender,.birthday,.identify,
     .email,.phone,.country,.docs_id, 
     .district,.address,.zip_code,.zip_code_fields,
-    .professional,.btn_form, .header_left, .header_left.h4, .h4 > h4{
+    .professional,.btn_form, .header_left, .header_left.h4, .h4 > h4, .h4.edit-mobile{
         width: 300px;
     }
     .field_1, .field_2{
