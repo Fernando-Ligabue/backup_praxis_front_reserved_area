@@ -26,12 +26,19 @@
     .results.results-list-admin{
         height: calc(100vh - 312px);
     }
+    .results.results-list-pro{
+        height: calc(100vh - 201px);
+    }
     .results.results-options{
         height: calc(100vh - 427px);
     }
     .results.results-options-utentes{
         height: calc(100vh - 321px);
+    } 
+    .results.results-options-pro{
+        height: calc(100vh - 427px);
     }
+    
 
 
 
@@ -75,6 +82,9 @@
     }
     .results.results-list{
         height: calc(100vh - 312px);
+    }
+    .results.results-list-pro{
+        height: calc(100vh - 201px);
     }
     .results.results-list-admin{
         height: calc(100vh - 260px);
@@ -205,6 +215,9 @@
     }
     .results.results-list{
         height: calc(100vh - 312px);
+    }
+    .results.results-list-pro{
+        height: calc(100vh - 201px);
     }
     .results.results-options{
         height: calc(100vh - 201px);
@@ -382,6 +395,9 @@
     .results.results-list{
         height: calc(100vh - 454px);
     }
+    .results.results-list-pro{
+        height: calc(100vh - 171px);
+    }
 
     .card{
         margin: 10px 0;
@@ -471,7 +487,7 @@
         height: calc(100vh - 454px);
     }
     .results.results-list-pro{
-        height: calc(100vh - 465px);
+        height: calc(100vh - 171px);
     }
     .results.results-list{
         height: calc(100vh - 448px);
